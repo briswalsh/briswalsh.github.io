@@ -1,174 +1,149 @@
-<!DOCTYPE hytml>
-<head style="margin:0;z-index:1">
-<body style="margin:0;z-index:2">
-<style>
+<!DOCTYPE html>
+<style type="text/css">
+    div {
+        font: helvetica;
+    }
+    h2 span {
+    	position: absolute;
+    	top: 50px;
+    	left: 30px;
+    }
+    h2 span a {
+    	text-decoration: none;
+    	color: #E5E5E5;
+    	background-color: #B9B7B7;
+    	border-style: solid;
+    	border-color: #B9B7B7;
+    	border-width: 7px;
+    	border-left: -12px;
+    	border-radius: 10px;
+    }
+    h2 span a:hover {
+    	color: #B9B7B7; 
+    	background-color: #14A01B;
+    	border-style: solid;
+    	border-color: #14A01B;
+    	border-width: 10px;
+    	transition: .5s;
+    }
 
-li {
-    display: inline;
-    margin: 0;
-}
+    #main_menu_container {
+        margin: -10px;
+	width: 100%;
+        position: fixed;
+	background: linear-gradient(to right,gray,white);
+	
+	z-index: 1;
+    }
+    .row_left {
+	float: left;
+        text-align: center;
+    }
+    .row_right {
+	float: right;
+	text-align: center;
+    }
+    .text_btn {
+        /* Alignment */
+	text-align: center;
+        display: inline-block;
+	/* Size Formatting */
+	font-size: 20px;
+	width: 70px;
+	height: 20px;
+	padding: 20px;
+    }
+    #text {
+	color: #E5E5E5;
+	background-image:url("Disk_Texture_2.jpg");
+	backgroung-repeat:repeat;
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+    }
+    #text_btn_left {
+	color: #E5E5E5;
+    }
+    #text_btn_left:hover {
+	transition: .5s;
+	color: #B9B7B7;
+	background-color: #E5E5E5; 
+    }
+    #text_btn_right {
+	color: #B9B7B7;
+	margin-right: 12px;
+    }
+    #text_btn_right:hover {
+	transition: .5s;
+	color: #E5E5E5;
+	background-color: #B9B7B7;
+    }    
+    #image {
+	position: relative;
+	margin-left: -10px;
+	margin-right: 0px;
+        width: 100%; /* for IE 6 */
+        height: auto;
+    }
 
-li a {
-    display: block;
-    color: #E5E5E5;
-    transition:.5s;
-    text-align: center;
-    text-decoration: none;
-    font: helvetica;
-    font-size: large;
-    font-weight: bold;
-    padding: 20 15px;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #E5E5E5;
-    color: #B9B7B7;
-}
-
-li b {
-    display: block;
-    color: #B9B7B7;
-    transition:.5s;
-    text-align: center;
-    text-decoration: none;
-    font: helvetica;
-    font-size: large;
-    font-weight: bold;
-    padding: 20 15px;
-}
-
-/* Change the link color to #111 (black) on hover */
-li b:hover {
-    background-color: #B9B7B7;
-    color: #E5E5E5;
-}
-
-h2 { 
-    position: absolute; 
-    top: 170px; 
-    left: 65%; 
-    width: 100%;
-    height: 75px;
-    /* aesthetic aspects */
-    color: #14A01B;
-    background-color: rgba(255,255,255,0.8);
-    border-color: rgba(255,255,255,0.8);
-    border-width: 15px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-h2 span {
-    position: absolute;
-    top: 50px;
-    left: 30px;
-}
-
-h2 span a {
-    text-decoration: none;
-    color: #14A01B;
-    background-color: #B9B7B7;
-    border-style: solid;
-    border-color: #B9B7B7;
-    border-width: 7px;
-    border-left: -12px;
-    border-radius: 10px;
-}
-
-h2 span a:hover {
-    color: #B9B7B7; 
-    background-color: #14A01B;
-    border-style: solid;
-    border-color: #14A01B;
-    border-width: 10px;
-    transition: .5s;
-}
-
-.image { 
-    width: 100%; /* for IE 6 */
-    height: auto;
-}
-
-.intro_image {
-    padding-top: 45px;
-    width: 100%; /* for IE 6 */
-    height: auto;
-}
-
-.text {
-    margin-right: 25px;
-    margin-left: 25px;
-    text-align: justify;
-}
-
-.intro_text {
-    padding-top: 70px;
-    margin-right: 25px;
-    margin-left: 25px;
-    text-align: justify;
-}
-
-/* Used to center objects */
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-}
-
-.left_button {
-    float: left;
-    width: 100;
-}
-
-.right_button {
-    float: right;
-    width: 100;
-}
-
-.gradMenu {
-    /* For Fx 3.6 to 15 */
-    background: linear-gradient(to right,gray,white);
-    width: 100%;
-    position: fixed;
-}
-
+    h2 { 
+    	position: absolute; 
+    	top: 170px; 
+    	left: 60%; 
+    	width: 100%;
+    	height: 75px;
+    	/* aesthetic aspects */
+    	color: #B9B7B7;
+    	background-color: rgba(255,255,255,0.8);
+    	border-color: rgba(255,255,255,0.8);
+    	border-width: 15px;
+    	border-radius: 10px;
+    	padding: 10px;
+    }
 </style>
 
-<ul class=gradMenu>
-    <li class=left_button> <a color=white href="index.html">Home</a></li>
-    <li class=left_button> <a color=white href="blog">Blog</a></li>
-    <li class=right_button> <b color=gray href="portfolio.html">Portfolio</a></li>
-    <li class=right_button> <b color=gray href="contact.html">Contact</a></li>
-</ul> 
+<div id=main_menu_container>
+    <div class="row_left">
+        <div class="text_btn" id="text_btn_left">
+	    <strong>Home</strong>
+        </div>
+        <div class="text_btn" id="text_btn_left">
+	    <strong>Blog</strong>
+        </div>
+    </div>
+    <div class="row_right">
+        <div class="text_btn" id="text_btn_right">
+	    <strong>Portfolio</strong>
+        </div>
+        <div class="text_btn" id="text_btn_right">
+	    <strong>Contact</strong>
+        </div>
+    </div>
+</div>
 
-</head>
-
-<p class=intro_image>
-    <div style="position:relative;z-index:2">
-        <img src="my_profile.jpg" width="100%" height="auto" alt="Profile Pic">
-	<h2> Who I am 
+<div id=image>
+    <img src="my_profile.jpg" width=100% height=auto alt="profile pic">
+    <h2> Who I am 
 	<span> 
 	    <a href="index.html"> Learn More > </a> 
 	</span>
     </h2>
     </div>
-</p>
+</div>
 
-<p class=text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. </p>
+<div id=text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. 
+</div>
 
-<p class=text>Mauris et justo at ex rutrum ullamcorper. Cras aliquet malesuada diam eget interdum. Nam in neque urna. Quisque lobortis suscipit nulla nec ullamcorper. Sed at nulla rutrum, egestas nibh at, fermentum elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec mi ut dui sodales fermentum. Proin ornare eu enim ut viverra. Vestibulum non urna vitae magna tincidunt luctus.</p>
+<div id=text>Mauris et justo at ex rutrum ullamcorper. Cras aliquet malesuada diam eget interdum. Nam in neque urna. Quisque lobortis suscipit nulla nec ullamcorper. Sed at nulla rutrum, egestas nibh at, fermentum elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec mi ut dui sodales fermentum. Proin ornare eu enim ut viverra. Vestibulum non urna vitae magna tincidunt luctus.
+</div>
 
-<p class=text>Cras sit amet velit scelerisque, faucibus eros in, efficitur purus. Nunc lobortis nisl nec commodo mollis. Integer vel lectus tellus. Aliquam cursus non ligula ac suscipit. Fusce tincidunt, arcu a ultrices sagittis, nunc dolor commodo augue, id malesuada nisi diam eu purus. Proin quis molestie ante, aliquam hendrerit augue. Nam vel erat mauris. Praesent mi tortor, dictum porta sagittis vel, venenatis vel erat. Etiam sodales ut lectus convallis consequat. Nam cursus libero et nisi bibendum mollis.</p>
+<div id=text>Cras sit amet velit scelerisque, faucibus eros in, efficitur purus. Nunc lobortis nisl nec commodo mollis. Integer vel lectus tellus. Aliquam cursus non ligula ac suscipit. Fusce tincidunt, arcu a ultrices sagittis, nunc dolor commodo augue, id malesuada nisi diam eu purus. Proin quis molestie ante, aliquam hendrerit augue. Nam vel erat mauris. Praesent mi tortor, dictum porta sagittis vel, venenatis vel erat. Etiam sodales ut lectus convallis consequat. Nam cursus libero et nisi bibendum mollis.
+</div>
 
-<p class=text>Morbi eleifend tempus velit sed vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut nec nibh quis nunc euismod fringilla. Etiam id elit ut quam varius iaculis. Vestibulum lorem risus, pellentesque at dui in, lobortis porta purus. Morbi a imperdiet elit. Nulla vulputate tempor purus mattis tincidunt. Mauris pulvinar, enim imperdiet tincidunt gravida, velit dui mollis lacus, sit amet sollicitudin lacus tortor ut purus. Cras et mi vel elit dapibus dictum id vel eros. Maecenas in dui cursus, tempor velit non, consectetur leo. Integer eu purus non neque efficitur feugiat sed et erat. Cras facilisis est lacus, in luctus lorem consectetur a. Ut ultricies fringilla metus, vitae pulvinar nulla accumsan ut. Ut pharetra, nulla id consequat porta, felis lectus luctus metus, ac finibus tellus ex nec tortor.</p>
+<div id=text>Morbi eleifend tempus velit sed vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut nec nibh quis nunc euismod fringilla. Etiam id elit ut quam varius iaculis. Vestibulum lorem risus, pellentesque at dui in, lobortis porta purus. Morbi a imperdiet elit. Nulla vulputate tempor purus mattis tincidunt. Mauris pulvinar, enim imperdiet tincidunt gravida, velit dui mollis lacus, sit amet sollicitudin lacus tortor ut purus. Cras et mi vel elit dapibus dictum id vel eros. Maecenas in dui cursus, tempor velit non, consectetur leo. Integer eu purus non neque efficitur feugiat sed et erat. Cras facilisis est lacus, in luctus lorem consectetur a. Ut ultricies fringilla metus, vitae pulvinar nulla accumsan ut. Ut pharetra, nulla id consequat porta, felis lectus luctus metus, ac finibus tellus ex nec tortor.
+</div>
+
 </body>
-
