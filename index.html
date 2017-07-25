@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <style type="text/css">
+::selection {
+	color: #E5E5E5;
+	background: #10A817;
+    }
     div {
         font: helvetica;
     }
@@ -20,9 +24,9 @@
     }
     h2 span a:hover {
     	color: #B9B7B7; 
-    	background-color: #14A01B;
+  	background-color: #0E8E14;
     	border-style: solid;
-    	border-color: #14A01B;
+    	border-color: #0E8E14;
     	border-width: 10px;
     	transition: .5s;
     }
@@ -31,7 +35,7 @@
         margin: -10px;
 	width: 102%;
         position: fixed;
-	background: linear-gradient(to right,gray,white);
+	background: linear-gradient(45deg,gray,gainsboro,white);
 	
 	z-index: 1;
     }
@@ -59,7 +63,10 @@
 	backgroung-repeat:repeat;
 
 	border-radius: 5px;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 	margin-right: 25px;
 	margin-left: 25px;
@@ -73,7 +80,7 @@
     #text_btn_left:hover {
 	transition: .5s;
 	color: #B9B7B7;
-	background-color: #E5E5E5; 
+	background-color: #0E8E14; 
     }
     #text_btn_right {
 	color: #B9B7B7;
@@ -82,7 +89,7 @@
     #text_btn_right:hover {
 	transition: .5s;
 	color: #E5E5E5;
-	background-color: #B9B7B7;
+	background-color: #10A817;
     }    
     #image {
 	position: relative;
