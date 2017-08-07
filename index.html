@@ -40,8 +40,9 @@
 	width: 102%;
         position: fixed;
 	background: linear-gradient(45deg,gray,gainsboro,white);
+	background: -moz-linear-gradient(45deg,graysboro,white);
 	
-	z-index: 1;
+	z-index: 10;
     }
     .row_left {
 	float: left;
@@ -61,41 +62,7 @@
 	height: 20px;
 	padding: 20px;
     }
-    #text_header {
-	color: #383838;
-	font-size: 20px;
-	font-weight: bold;
 
-	background-image:url("Shark_Skin_Paper.jpg");
-	backgroung-repeat:repeat;
-
-	margin-top: 10px;
-	margin-bottom: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-left: 20px;
-	padding-top: 12px;
-	padding-bottom: 5px;
-	
-	border-radius: 15px;
-    }
-    #text_body {
-	background-color: rgba(255,255,255,0.8);
-    	border-color: rgba(255,255,255,0.8);	
-
-	border-radius: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-
-	margin-right: 25px;
-	margin-top: 10px;
-	margin-bottom: 25px;
-	text-align: justify;
-	
-	font-size: 12px;
-    }
     #text_btn_left {
 	color: #E5E5E5;
     }
@@ -112,13 +79,107 @@
 	transition: .5s;
 	color: #E5E5E5;
 	background-color: #10A817;
-    }    
-    #image {
-	position: relative;
+    }
+
+    #main_image_frame {
 	margin-left: -10px;
-	margin-right: 0px;
-        width: 103%; /* for IE 6 */
+	width: 105%;
+	max-height: 521px;
+
+	z-index: -1;
+    }
+
+    #main_image {
+	overflow: hidden;
+	top: 2em;
+	
+	width: 105%;
         height: auto;
+	max-width: 700px;
+
+	margin: auto;
+
+	padding-top: 1em;
+	z-index: 1;
+    }
+
+    #paper {
+	position: absolute;
+
+	width: 103%;
+	background: white;
+	z-index: 4;	
+    }
+    
+    #text_header {
+	position: relative;
+	
+	color: #383838;
+	font-size: 20px;
+	font-weight: bold;
+
+	background-image:url("Shark_Skin_Paper.jpg");
+	backgroung-repeat:repeat;
+
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-top: 12px;
+	padding-bottom: 5px;
+	
+	border-radius: 15px;
+	z-index: 5;
+    }
+    #text_body {
+	position: relative;
+
+	background-color: rgba(255,255,255,0.8);
+    	border-color: rgba(255,255,255,0.8);	
+
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	text-align: justify;
+	
+	font-size: 12px;
+	z-index: 5;
+    }
+
+    .img_right {
+	float: right;
+	padding-right = 10px;
+	padding-top = 12px;
+    }
+    .img_left {
+	float: left;
+	padding-left = 10px:
+	padding-top = 12px;
+    }
+    .highlight_photo {
+	position: relative;
+    }
+    #highlight_img_square {
+	width: 30px;
+	height: 30px;
+    }
+    #highlight_img_landscape {
+	width: 30px;
+	height: 30px;
+    }
+    #highlight_img_portrait {
+	width: 30px;
+	height: 30px;
+    }
+    #img_detail {
+	position: absolute;
     }
 
     h2 { 
@@ -136,6 +197,8 @@
     	padding: 10px;
     }
 </style>
+
+<title>Welcome</title>
 
 <div id=main_menu_container>
     <div class="row_left">
@@ -156,14 +219,15 @@
     </div>
 </div>
 
-<div id=image>
-    <img src="my_profile.jpg" width=100% height=auto alt="profile pic">
-    <h2> Who I am 
-	<span> 
-	    <a href="index.html"> Learn More > </a> 
-	</span>
-    </h2>
-    </div>
+<div id=main_image_frame>
+    <div id=main_image>
+        <img src="my_profile.jpg" width=100% height=auto alt="profile pic">
+        <h2> Who I am 
+            <span> 
+                <a href="index.html"> Learn More > </a> 
+    	    </span>
+    	</h2>
+    <div id=paper>
 </div>
 
 <div id=text_header> Intro
@@ -180,4 +244,5 @@
     </div>
 </div>
 
-</body>
+
+
