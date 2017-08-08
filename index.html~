@@ -194,7 +194,8 @@
 
 	padding-top: 2px;
 	padding-left: 2px;
-	
+
+	color: #B9B7B7;
 	background-color: white;
 	border-color: white;
 	
@@ -262,12 +263,8 @@
         </div>
 
         <div id=text_body>
-	    <div class=img_right>
-	        <div class=highlight_img id=highlight_img_square>
-	            <img src="seared_tuna_benedict.jpg" width=100% height=100% alt="sample highlight">
+	    <img src="seared_tuna_benedict.jpg" style="float:right; margin: 0px 15px 15px 0px;" width=120px height=120px alt="sample highlight">
 		    <div id=img_detail> <i>Above</i>: big portioned dish I made</div>
-		</div>
-	    </div>
  Morbi eleifend tempus velit sed vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut nec nibh quis nunc euismod fringilla. Etiam id elit ut quam varius iaculis. Vestibulum lorem risus, pellentesque at dui in, lobortis porta purus. Morbi a imperdiet elit. Nulla vulputate tempor purus mattis tincidunt. Mauris pulvinar, enim imperdiet tincidunt gravida, velit dui mollis lacus, sit amet sollicitudin lacus tortor ut purus. Cras et mi vel elit dapibus dictum id vel eros. Maecenas in dui cursus, tempor velit non, consectetur leo. Integer eu purus non neque efficitur feugiat sed et erat. Cras facilisis est lacus, in luctus lorem consectetur a. Ut ultricies fringilla metus, vitae pulvinar nulla accumsan ut. Ut pharetra, nulla id consequat porta, felis lectus luctus metus, ac finibus tellus ex nec tortor.
 	</div>
     </div>
