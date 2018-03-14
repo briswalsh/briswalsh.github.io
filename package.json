@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "====================================================================================================\r =========================THIS IS SOURCE FOR BRIAN WALSH'S WEBSITE===================================\r ====================================================================================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briswalsh/briswalsh.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briswalsh/briswalsh.github.io/issues"
+  },
+  "homepage": "https://github.com/briswalsh/briswalsh.github.io#readme",
+  "dependencies": {
+    "node-mandrill": "^1.0.1"
+  }
+}
