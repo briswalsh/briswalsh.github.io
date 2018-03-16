@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<style type="text/css">
+
+<style type="text/css">    
     ::selection {
-	color: #E5E5E5;
-	background: #10A817;
+	color: #FFFFFF;
+	background: #00ccff;
     }
     ::-moz-selection {
-	color: #E5E5E5;
-	background: #10A817;
+	color: #FFFFFF;
+	background: #00ccff;
     }
     div {
         font: helvetica;
@@ -27,15 +28,23 @@
     	border-radius: 10px;
     }
     h2 span a:hover {
-    	color: #B9B7B7; 
-  	background-color: #0E8E14;
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.4);
+    	color: #E5E5E5; 
+  	background-color: #00CCFF;
     	border-style: solid;
-    	border-color: #0E8E14;
-    	border-width: 10px;
+    	border-color: #00CCFF;
+    	border-width: 7px;
     	transition: .5s;
+    }
+    strong a {
+	color: #B9B7B7;
+    }
+    a strong {
+	color: #E5E5E5;
     }
 
     #main_menu_container {
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.4);
         margin: -10px;
 	width: 102%;
         position: fixed;
@@ -68,17 +77,17 @@
     }
     #text_btn_left:hover {
 	transition: .5s;
-	color: #B9B7B7;
-	background-color: #0E8E14; 
+	color: #E5E5E5;
+	background-color:  #00CCFF; 
     }
     #text_btn_right {
 	color: #B9B7B7;
-	margin-right: 12px;
+	margin-right: 20px;
     }
     #text_btn_right:hover {
 	transition: .5s;
 	color: #E5E5E5;
-	background-color: #10A817;
+	background-color: #3CE7FF;
     }
 
     #main_image_frame {
@@ -106,9 +115,13 @@
     #paper {
 	position: relative;
 
-	width: 100%;
-	background: white;
-	z-index: 4;	
+	margin-top: 0px;
+	margin-left: -10px;
+	width: 105%;
+	background-image:url("light_bckgrd.jpg");
+	z-index: 4;
+
+	color: rgba(0,0,0,0);
     }
     
     #text_header {
@@ -118,27 +131,27 @@
 	font-size: 20px;
 	font-weight: bold;
 
-	background-image:url("Shark_Skin_Paper.jpg");
+	background-image:url("dark_bckgrd.jpg");
 	backgroung-repeat:repeat;
 
 	padding-left: 20px;
 	padding-top: 12px;
 	padding-bottom: 5px;
-	patting_right: 20px;
+	padding_right: 20px;
 
-	margin-top: 12px;
-	margin-left: 10px;
-	margin-bottom: 12px;
-	margin-right: 10px;
+	/*margin-top: 5px;*/
+	margin-left: 35px;
+	margin-bottom: 50px;
+	margin-right: 65px;
 
-	border-radius: 15px;
+	border-radius: 10px;
 	z-index: 5;
     }
     #text_body {
 	position: relative;
 
-	background-color: rgba(255,255,255,0.8);
-    	border-color: rgba(255,255,255,0.8);	
+	background-color: rgba(255,255,255,0);
+    	border-color: rgba(255,255,255,0);	
 
 	border-radius: 5px;
 	padding-top: 5px;
@@ -151,7 +164,7 @@
 	margin-bottom: 25px;
 	text-align: justify;
 	
-	font-size: 12px;
+	font-size: 13px;
 	z-index: 5;
     }
 
@@ -224,18 +237,22 @@
 <div id=main_menu_container>
     <div class="row_left">
         <div class="text_btn" id="text_btn_left">
-	    <strong>Home</strong>
+		<a href="index.html" style="text-decoration:none"><strong>Home</strong></a>
         </div>
         <div class="text_btn" id="text_btn_left">
-	    <strong>Blog</strong>
+	    <a href="projects.html" style="text-decoration:none"><strong>Projects</strong></a>
         </div>
     </div>
     <div class="row_right">
         <div class="text_btn" id="text_btn_right">
-	    <strong>Portfolio</strong>
+	    <strong>
+		    <a href="portfolio.html" style="text-decoration:none">Portfolio</a>
+	    </strong>
         </div>
         <div class="text_btn" id="text_btn_right">
-	    <strong>Contact</strong>
+	    <strong>
+		    <a href="contact.html" style="text-decoration:none"> Contact </a>
+	    </strong>
         </div>
     </div>
 </div>
@@ -251,7 +268,9 @@
     </div>
 </div>
 
+
 <div id=paper>
+    FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER
     <div id=text_header> Intro
         <div id=text_body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. 
         </div>
@@ -263,11 +282,11 @@
         </div>
 
         <div id=text_body>
-	    <img src="seared_tuna_benedict.jpg" style="float: right; margin: 5px 5px 15px 15px;" width=120px height=100% alt="sample highlight">
+	    <img src="seared_tuna_benedict.jpg" style="float: right; margin: 10px 5px 15px 15px;" width=120px height=100% alt="sample highlight">
  Morbi eleifend tempus velit sed vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut nec nibh quis nunc euismod fringilla. Etiam id elit ut quam varius iaculis. Vestibulum lorem risus, pellentesque at dui in, lobortis porta purus. Morbi a imperdiet elit. Nulla vulputate tempor purus mattis tincidunt. Mauris pulvinar, enim imperdiet tincidunt gravida, velit dui mollis lacus, sit amet sollicitudin lacus tortor ut purus. Cras et mi vel elit dapibus dictum id vel eros. Maecenas in dui cursus, tempor velit non, consectetur leo. Integer eu purus non neque efficitur feugiat sed et erat. Cras facilisis est lacus, in luctus lorem consectetur a. Ut ultricies fringilla metus, vitae pulvinar nulla accumsan ut. Ut pharetra, nulla id consequat porta, felis lectus luctus metus, ac finibus tellus ex nec tortor.
 	</div>
     </div>
+    FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER
 </div>
-
 
 
