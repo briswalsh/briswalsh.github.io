@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 
-<style type="text/css">    
+<script>
+    function brgr_btn(x) {
+	x.classList.toggle("change");
+    }
+</script>
+
+<style type="text/css">   
+    html {
+	overflow-x:hidden;
+    }
+
     ::selection {
 	color: #FFFFFF;
 	background: #00ccff;
@@ -30,9 +40,9 @@
     h2 span a:hover {
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.4);
     	color: #E5E5E5; 
-  	background-color: #00CCFF;
+  	background-color: #0033CC;
     	border-style: solid;
-    	border-color: #00CCFF;
+    	border-color: #0033CC;
     	border-width: 7px;
     	transition: .5s;
     }
@@ -72,29 +82,119 @@
 	padding: 20px;
     }
 
+    .brgr_btn {
+	background-color: rgba(0,0,0,0);
+	
+	float: right;
+	width: 20px;
+	height: 20px;
+	padding: 20px;
+	
+	display: inline-block;
+	margin-right: 13px;
+    }
+    .brgr_btn:hover {
+	background-color: #0033CC;
+    }
+    .change .brgr_btn {
+	background-color: #0033CC;
+    }
+    .brgr_patty_1 {
+	font-size: 4px;
+	color: #E5E5E5;
+	
+	width: 25px;
+	height: 4px;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+
+	margin-left: -2px;
+	margin-top: 0px;
+
+	transition: 0.4s;
+
+	border-color: #A4A4A4;
+	background-color: #A4A4A4;
+    }
+    .brgr_patty_2 {
+	font-size: 4px;
+	color: #E5E5E5;
+	
+	width: 25px;
+	height: 4px;
+	
+	margin-left: -2px;
+	margin-top: 5px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+
+	transition: 0.4s;
+
+	border-color: #A4A4A4;
+	background-color: #A4A4A4;
+    }
+    .brgr_patty_3 {
+	font-size: 4px;
+	color: #E5E5E5;
+	
+	width: 25px;
+	height: 4px;
+	
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+
+	margin-left: -2px;
+	margin-top: 5px;
+
+	transition: 0.4s;
+
+	border-color: #A4A4A4;
+	background-color: #A4A4A4;
+    }
+
+    .change .brgr_patty_1 {
+	transform: rotate(-45deg) translate(-6px,6px);
+	background-color: #FFFFFF;
+	border-color; #FFFFFF;
+    }
+    .change .brgr_patty_2 {
+	opacity: 0;
+    }
+    .change .brgr_patty_3 {
+	transform: rotate(45deg) translate(-8px,-8px);
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+    }
+
     #text_btn_left {
 	color: #E5E5E5;
     }
     #text_btn_left:hover {
 	transition: .5s;
 	color: #E5E5E5;
-	background-color:  #00CCFF; 
+	background-color:  #0033CC; 
     }
     #text_btn_right {
-	color: #B9B7B7;
+	color: #B6B6B6;
 	margin-right: 20px;
     }
     #text_btn_right:hover {
 	transition: .5s;
 	color: #E5E5E5;
-	background-color: #3CE7FF;
+	background-color: #0033CC;
     }
 
     #main_image_frame {
 	margin-left: -10px;
 	width: 105%;
-	max-height: 521px;
+	max-height: 375px;
 
+	background-color: #0033CC;
 	z-index: -1;
     }
 
@@ -104,11 +204,13 @@
 	
 	width: 105%;
         height: auto;
-	max-width: 700px;
+	max-width: 375px;
 
 	margin: auto;
+	margin-left: 10px;
+	margin-top; 40px;
 
-	padding-top: 1em;
+	padding-top: 1.15em;
 	z-index: 1;
     }
 
@@ -127,7 +229,7 @@
     #text_header {
 	position: relative;
 	
-	color: #383838;
+	color: #757575;
 	font-size: 20px;
 	font-weight: bold;
 
@@ -150,8 +252,8 @@
     #text_body {
 	position: relative;
 
-	background-color: rgba(255,255,255,0);
-    	border-color: rgba(255,255,255,0);	
+	background-color: rgba(0,0,0,0);
+    	border-color: rgba(0,0,0,0);	
 
 	border-radius: 5px;
 	padding-top: 5px;
@@ -243,26 +345,19 @@
 	    <a href="projects.html" style="text-decoration:none"><strong>Projects</strong></a>
         </div>
     </div>
-    <div class="row_right">
-        <div class="text_btn" id="text_btn_right">
-	    <strong>
-		    <a href="portfolio.html" style="text-decoration:none">Portfolio</a>
-	    </strong>
-        </div>
-        <div class="text_btn" id="text_btn_right">
-	    <strong>
-		    <a href="contact.html" style="text-decoration:none"> Contact </a>
-	    </strong>
-        </div>
+    <div class="brgr_btn" onclick="brgr_btn(this)">
+	<div class="brgr_patty_1"></div>
+	<div class="brgr_patty_2"></div>
+	<div class="brgr_patty_3"></div>
     </div>
 </div>
 
 <div id=main_image_frame>
     <div id=main_image>
-        <img src="my_profile.jpg" width=100% height=auto alt="profile pic">
-        <h2> Who I am 
+        <img src="GoldenRetriever_Hero_Trans.png" width=100% height=auto alt="profile pic">
+        <h2> My Work 
             <span> 
-                <a href="index.html"> Learn More > </a> 
+                <a href="portfolio.html"> Click to View > </a> 
     	    </span>
     	</h2>
     </div>
