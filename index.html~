@@ -3,6 +3,22 @@
 <script>
     function brgr_btn(x) {
 	x.classList.toggle("change");
+
+	document.getElementById("brgr_menu").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		    openDropdown.classList.remove('show');
+		}
+	    }
+	}
     }
 </script>
 
@@ -89,16 +105,23 @@
 	width: 20px;
 	height: 20px;
 	padding: 20px;
-	
+
+	cursor: button;
 	display: inline-block;
 	margin-right: 13px;
     }
     .brgr_btn:hover {
 	background-color: #0033CC;
+	transition: 0.4s;
+    }
+    .brgr_btn:focus {
+	background-color: #0033CC;
+	transition: 0.4s;
     }
     .change .brgr_btn {
 	background-color: #0033CC;
     }
+
     .brgr_patty_1 {
 	font-size: 4px;
 	color: #E5E5E5;
@@ -159,16 +182,51 @@
 
     .change .brgr_patty_1 {
 	transform: rotate(-45deg) translate(-6px,6px);
-	background-color: #FFFFFF;
-	border-color; #FFFFFF;
     }
     .change .brgr_patty_2 {
 	opacity: 0;
     }
     .change .brgr_patty_3 {
 	transform: rotate(45deg) translate(-8px,-8px);
-	background-color: #FFFFFF;
-	border-color: #FFFFFF;
+    }
+
+    .brgr_menu {
+	display: none;
+	position: absolute;
+	margin-left: -84px;
+	margin-top: 14px;
+
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+    }
+
+    .brgr_menu a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #A4A4A4;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	
+	background-color: #E5E5E5;
+
+	border-right: 16px solid;
+	border-color: #A4A4A4;
+
+	z-index: 0;
+    }
+
+    .brgr_menu a:hover {
+	color: #E5E5E5;
+	background-color: #A4A4A4;
+
+	border-right: 16px solid;
+	border-color: #0033CC;
+    }   
+
+    .show {
+	display: block;
     }
 
     #text_btn_left {
@@ -341,14 +399,17 @@
         <div class="text_btn" id="text_btn_left">
 		<a href="index.html" style="text-decoration:none"><strong>Home</strong></a>
         </div>
-        <div class="text_btn" id="text_btn_left">
-	    <a href="projects.html" style="text-decoration:none"><strong>Projects</strong></a>
-        </div>
     </div>
     <div class="brgr_btn" onclick="brgr_btn(this)">
 	<div class="brgr_patty_1"></div>
 	<div class="brgr_patty_2"></div>
 	<div class="brgr_patty_3"></div>
+
+	<div id="brgr_menu" class="brgr_menu">
+	    <a href="projects.html">My Projects</a>
+	    <a href="porfolio.html">Portfolio</a>
+	    <a href="contact.hrml">Contact</a>
+	</div>
     </div>
 </div>
 
