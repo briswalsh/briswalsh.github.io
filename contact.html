@@ -22,6 +22,11 @@
 	    }
 	}
     }
+
+    function email_form() {
+	x = document.getElementById("email_form");
+	x.classList.toggle("show");
+    }
 </script>
 
 <style type="text/css">
@@ -56,6 +61,24 @@
 	overflow:hidden;
     }
 
+    .form {
+	display:none;
+    }
+
+    .form_submit {
+	padding-top: 0.3em;
+    }
+
+    .prompt_main {
+	padding-bottom: 0.08em;
+    }
+
+    .prompt {
+	padding-top: 0.3em;
+	padding-bottom: 0.08em;
+    }
+
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="sitestyle.css">
@@ -87,7 +110,9 @@
 
 <div class=contact_portal_frame>
     <div class=logo_container style="float:left">
+	<div onclick="email_form()">
 	    <img src="email_logo.png" alt="email logo" class="logo">
+	</div>
     </div>
     <div class=logo_container style="float:left">
 	<img src="linkedin_logo.png" alt="li logo" class="logo">
@@ -103,14 +128,38 @@
 	</a>
     </div>
     </div>
-</div>
+    </div>
 
 <div id=paper>
-	<div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    <div class=unselectable> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    
+    <div class=form id=email_form>
+	<div id=text_header> Compose Email
+            <div id=text_body>
+		<div class=prompt_main id=address_prompt>
+		    Email Address:
+		</div>
+		<input id=email_address_input type="text" name="email_address" required>
+		<div class=prompt id=subject_prompt> 
+		    Subject:
+		</div>
+	        <input id=subject_input type="text" name="fname" required>
+		<div class=prompt id=message_body>
+		    Message:
+		</div>
+		<textarea id=message_input name="message_body" cols="40" rows="5"></textarea>
+		<div class=form_submit id=submit_button>
+	            <button type="button" onclick="submitEmail()">Submit</button>
+		</div>
+            </div>
+	</div>
+    </div>
+
     <div id=text_header> Contact Brian
         <div id=text_body>You can click on the above icons to contact me via email, or my respective profiles. If you are trying to reach me personally, I am most quick to respond to email. I use git for primarily making video games (and also for making this website). You can use linkedin to connect with me professionally, and instagram to see what I'm up to from day to day.
         </div>
 	<div id=text_body>If you would like to look at some of my work, feel free to check out my <a href="portfolio.html">portfolio</a>. If you find yourself more in the mood to see my eclectic personal works, and works in progress, you can view my <a href="projects.html">projects</a>.
         </div>
     </div>
+    <div class=unselectable> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
 </div>
