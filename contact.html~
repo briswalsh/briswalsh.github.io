@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+
+<script>
+    function brgr_btn(x) {
+	x.classList.toggle("change");
+
+	document.getElementById("brgr_menu").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		    openDropdown.classList.remove('show');
+		}
+	    }
+	}
+    }
+</script>
+
+<style type="text/css">
+    .logo_container {
+	top: 2em;
+	padding-top: 5em;
+	padding-bottom: 2em;
+	width: 10%;
+	margin-left: 12%;
+	z-index: 1;
+    }
+
+    .logo {
+	display: block;
+	width:100%;
+	height:auto;
+	border-radius:10px;
+    }
+    .logo:hover {
+	opacity: 0.5;
+	transition: 0.4s;
+    }
+
+    .contact_portal_frame {
+	margin-left: -10px;
+	width: 105%;
+	height: 50%;
+	max-height: 400px;
+	background-color: #0033CC;
+	z-index: -1;
+	overflow:hidden;
+    }
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="sitestyle.css">
+
+<title>Contact Brian</title>
+
+</head>
+
+<div id=main_menu_container>
+    <div class="row_left">
+        <div class="dft_menu_btn" id="home_btn_left">
+	    <a href="index.html" style="text-decoration:none">
+		<img src="home_icon.png" alt="Home Button" height="20px" width="20px">
+	    </a>
+        </div>
+    </div>
+    <div class="brgr_btn" onclick="brgr_btn(this)">
+	<div class="brgr_patty_1"></div>
+	<div class="brgr_patty_2"></div>
+	<div class="brgr_patty_3"></div>
+
+	<div id="brgr_menu" class="brgr_menu">
+	    <a href="projects.html">My Projects</a>
+	    <a href="porfolio.html">Portfolio</a>
+	    <a href="contact.html">Contact</a>
+	</div>
+    </div>
+</div>
+
+<div class=contact_portal_frame>
+    <div class=logo_container style="float:left">
+	    <img src="email_logo.png" alt="email logo" class="logo">
+    </div>
+    <div class=logo_container style="float:left">
+	<img src="linkedin_logo.png" alt="li logo" class="logo">
+    </div>
+    <div class=logo_container style="float:left">	
+	<a href="https://github.com/briswalsh">
+	    <img src="GitHub_logo.png" alt="git logo" class="logo">
+	</a>
+    </div>
+    <div class=logo_container style="float:left">	
+	<a href="https://www.instagram.com/briswalsh/">
+	    <img src="insta_logo.png" alt="insta logo" class="logo">
+	</a>
+    </div>
+    </div>
+</div>
+
+<div id=paper>
+	<div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    <div id=text_header> Contact Brian
+        <div id=text_body>You can click on the above icons to contact me via email, or my respective profiles. If you are trying to reach me personally, I am most quick to respond to email. I use git for primarily making video games (and also for making this website). You can use linkedin to connect with me professionally, and instagram to see what I'm up to from day to day.
+        </div>
+	<div id=text_body>If you would like to look at some of my work, feel free to check out my <a href="portfolio.html">portfolio</a>. If you find yourself more in the mood to see my eclectic personal works, and works in progress, you can view my <a href="projects.html">projects</a>.
+        </div>
+    </div>
+</div>
