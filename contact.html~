@@ -4,6 +4,8 @@
 i
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
+    var sent_messages=0;
+
     function brgr_btn(x) {
 	x.classList.toggle("change");
 
@@ -34,68 +36,24 @@ i
 	subj = document.getElementById("subject_input").value;
 	content = document.getElementById("message_input").value;
 
-	full_message = content + "\n\nSender Email : " + address;
+	confirm_message = "\n\n" + address;
 
-	emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
-	emailjs.send("gmail", "template_EbkZPzq3", {"reply_to":address,"subject":subj,"from_email":address,"message_html":content})
 
-	window.alert(address + subj + full_message);
+	if (sent_messages < 1) {
+	    /*emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
+	    emailjs.send("gmail", "template_EbkZPzq3", {"reply_to":address,"from_name":"","from_email":address,"subject":subj,"message_html":content})*/
+	
+	    window.alert("Your message has been sent: \n" + confirm_message);
+	    sent_messages++;
+	}
+	else {
+	    window.alert("You have already sent a message!");
+	}
     }
 </script>
 
-<style type="text/css">
-    .logo_container {
-	top: 2em;
-	padding-top: 5em;
-	padding-bottom: 2em;
-	width: 10%;
-	margin-left: 12%;
-	z-index: 1;
-    }
-
-    .logo {
-	display: block;
-	width:100%;
-	height:auto;
-	border-radius:10px;
-    }
-    .logo:hover {
-	cursor: pointer;
-	opacity: 0.5;
-	transition: 0.4s;
-    }
-
-    .contact_portal_frame {
-	margin-left: -10px;
-	width: 105%;
-	height: 50%;
-	max-height: 400px;
-	background-color: #0033CC;
-	z-index: -1;
-	overflow:hidden;
-    }
-
-    .form {
-	display:none;
-    }
-
-    .form_submit {
-	padding-top: 0.3em;
-    }
-
-    .prompt_main {
-	padding-bottom: 0.08em;
-    }
-
-    .prompt {
-	padding-top: 0.3em;
-	padding-bottom: 0.08em;
-    }
-
-
-</style>
-
 <link rel="stylesheet" type="text/css" href="sitestyle.css">
+<link rel="stylesheet" type="text/css" href="mailstyle.css">
 
 <title>Contact Brian</title>
 

@@ -4,6 +4,8 @@
 i
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
+    var sent_messages=0;
+
     function brgr_btn(x) {
 	x.classList.toggle("change");
 
@@ -34,12 +36,19 @@ i
 	subj = document.getElementById("subject_input").value;
 	content = document.getElementById("message_input").value;
 
-	full_message = content + "\n\nSender Email : " + address;
+	confirm_message = "\n\n" + address;
 
-	emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
-	emailjs.send("gmail", "template_EbkZPzq3", {"reply_to":address,"subject":subj,"from_email":address,"message_html":content})
 
-	window.alert(address + subj + full_message);
+	if (sent_messages < 1) {
+	    /*emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
+	    emailjs.send("gmail", "template_EbkZPzq3", {"reply_to":address,"from_name":"","from_email":address,"subject":subj,"message_html":content})*/
+	
+	    window.alert("Your message has been sent: \n" + confirm_message);
+	    sent_messages++;
+	}
+	else {
+	    window.alert("You have already sent a message!");
+	}
     }
 </script>
 
