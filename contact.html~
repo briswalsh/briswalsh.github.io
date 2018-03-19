@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-
+i
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     function brgr_btn(x) {
 	x.classList.toggle("change");
@@ -23,8 +24,22 @@
 	}
     }
 
-    function email_form(x) {
-	x.classList.toggle("show")
+    function email_form() {
+	x = document.getElementById("email_form");
+	x.classList.toggle("show");
+    }
+
+    function submit_email() {
+	address = document.getElementById("email_address_input").value;
+	subj = document.getElementById("subject_input").value;
+	content = document.getElementById("message_input").value;
+
+	full_message = content + "\n\nSender Email : " + address;
+
+	emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
+	emailjs.send("gmail", "template_EbkZPzq3", {"reply_to":address,"subject":subj,"from_email":address,"message_html":content})
+
+	window.alert(address + subj + full_message);
     }
 </script>
 
@@ -61,7 +76,7 @@
     }
 
     .form {
-	display:block;
+	display:none;
     }
 
     .form_submit {
@@ -100,7 +115,7 @@
 	<div class="brgr_patty_3"></div>
 
 	<div id="brgr_menu" class="brgr_menu">
-	    <a href="projects.html">My Projects</a>
+	    <a href="projects.html">Projects</a>
 	    <a href="porfolio.html">Portfolio</a>
 	    <a href="contact.html">Contact</a>
 	</div>
@@ -109,7 +124,9 @@
 
 <div class=contact_portal_frame>
     <div class=logo_container style="float:left">
+	<div onclick="email_form()">
 	    <img src="email_logo.png" alt="email logo" class="logo">
+	</div>
     </div>
     <div class=logo_container style="float:left">
 	<img src="linkedin_logo.png" alt="li logo" class="logo">
@@ -134,21 +151,19 @@
 	<div id=text_header> Compose Email
             <div id=text_body>
 		<div class=prompt_main id=address_prompt>
-		    Email Address:
+		    Your email address:
 		</div>
-		<input id=email_address type="text" name="email_address" required>
+		<textarea id=email_address_input type="text" name="email_address" cols="40" rows="1"></textarea>
 		<div class=prompt id=subject_prompt> 
 		    Subject:
 		</div>
-	        <input id=subject type="text" name="fname" required>
+		<textarea id=subject_input type="text" name="fname" cols="40" rows="1"></textarea>
 		<div class=prompt id=message_body>
 		    Message:
 		</div>
-		<textarea name="Text1" cols="40" rows="5">
-		    <input id=email_address type="text" name="message" required>
-		<textarea name="Text1" cols="40" rows="5"></textarea>
+		<textarea id=message_input name="message_body" cols="40" rows="5"></textarea>
 		<div class=form_submit id=submit_button>
-	            <button type="button" onclick="submitEmail()">Submit</button>
+	            <button type="button" onclick="submit_email()">Submit</button>
 		</div>
             </div>
 	</div>
@@ -157,7 +172,7 @@
     <div id=text_header> Contact Brian
         <div id=text_body>You can click on the above icons to contact me via email, or my respective profiles. If you are trying to reach me personally, I am most quick to respond to email. I use git for primarily making video games (and also for making this website). You can use linkedin to connect with me professionally, and instagram to see what I'm up to from day to day.
         </div>
-	<div id=text_body>If you would like to look at some of my work, feel free to check out my <a href="portfolio.html">portfolio</a>. If you find yourself more in the mood to see my eclectic personal works, and works in progress, you can view my <a href="projects.html">projects</a>.
+	<div id=text_body>If you would like to look at some of my work, feel free to check out my <a href="portfolio.html">portfolio</a>. If you find yourself more in the mood to see my eclectic personal works (and works in progress) you can view my <a href="projects.html">projects</a>.
         </div>
     </div>
     <div class=unselectable> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>

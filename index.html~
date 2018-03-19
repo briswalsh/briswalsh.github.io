@@ -5,7 +5,7 @@
 <script>
     function brgr_btn(x) {
 	x.classList.toggle("change");
-
+	document.getElementById("brgr_menu_item").classList.toggle("change");
 	document.getElementById("brgr_menu").classList.toggle("show");
     }
 
@@ -44,9 +44,9 @@
 	<div class="brgr_patty_3"></div>
 
 	<div id="brgr_menu" class="brgr_menu">
-	    <a href="projects.html">My Projects</a>
-	    <a href="porfolio.html">Portfolio</a>
-	    <a href="contact.html">Contact</a>
+	    <a id="brgr_menu_item" href="projects.html">My Projects</a>
+	    <a id="brgr_menu_item" href="porfolio.html">Portfolio</a>
+	    <a id="brgr_menu_item" href="contact.html">Contact</a>
 	</div>
     </div>
 </div>

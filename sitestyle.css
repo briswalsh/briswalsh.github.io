@@ -178,7 +178,7 @@
 	text-decoration: none;
 	display: block;
 	background-color: #E5E5E5;
-	border-right: 16px solid;
+	border-right: 4px solid;
 	border-color: #A4A4A4;
 	z-index: 0;
     }
@@ -192,7 +192,7 @@
 	cursor: pointer;
 	color: #E5E5E5;
 	background-color: #A4A4A4;
-	border-right: 16px solid;
+	border-right: 8px solid;
 	border-color: #0033CC;
     }   
 

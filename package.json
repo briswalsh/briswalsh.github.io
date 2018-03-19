@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/briswalsh/briswalsh.github.io#readme",
   "dependencies": {
+    "emailjs-com": "^2.1.0",
+    "mandrill-api": "^1.0.45",
     "node-mandrill": "^1.0.1"
   }
 }
