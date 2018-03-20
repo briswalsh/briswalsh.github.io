@@ -137,6 +137,22 @@
     <div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
 </div>
 
+<div id=main_image_frame>
+    <div id=secondary_focus style="width:100%; max-width:275px;">
+        <img src="noahs_tower/level_3.jpg" width=100% height=auto alt="main noah's tower screenshot" style="border-radius:20px">
+	<h2 style="top: 330%;"><div style="margin-left:10px; margin-top:5px"> Spring Cleaning VR </div> 
+	    <div class = "unselectable"> Newline </div>
+	</h2>
+    </div>
+</div>
 
+<div id=paper>
+	<div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    <div id=text_header> Intro
+        <div id=text_body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. 
+        </div>
+    </div>
+    <div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+</div>
 
 
