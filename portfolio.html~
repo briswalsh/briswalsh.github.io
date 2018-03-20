@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+
+<script>
+    function brgr_btn(x) {
+	x.classList.toggle("change");
+	document.getElementById("brgr_menu_item").classList.toggle("change");
+	document.getElementById("brgr_menu").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		    openDropdown.classList.remove('show');
+		}
+	    }
+	}
+    }
+</script>
+
+<style type="text/css">
+    #focus_image {
+	overflow: hidden;
+	top: 2em;
+	width: 70%;
+        height: auto;
+	max-width: 250px;
+	margin: auto;
+	margin-left: 25px;
+	margin-top; 35px;
+	padding-top: 4.75em;
+	padding-bottom: 1em;
+	z-index: 1;
+    }
+
+    #secondary_focus {
+	overflow: hidden;
+	top: 2em;
+	width: 70%;
+        height: auto;
+	max-width: 300px;
+	margin: auto;
+	margin-left: 25px;
+	margin-top; 45px;
+	padding-top: 1.1em;
+	padding-bottom: 1em;
+	z-index: 1;
+    } 
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="sitestyle.css">
+
+<title>Brian Walsh - Portfolio</title>
+
+</head>
+
+<div id=main_menu_container>
+    <div class="row_left">
+        <div class="dft_menu_btn" id="home_btn_left">
+	    <a href="index.html" style="text-decoration:none">
+		<img src="home_icon.png" alt="Home Button" height="20px" width="20px">	
+	    </a>
+        </div>
+    </div>
+    <div class="brgr_btn" onclick="brgr_btn(this)">
+	<div class="brgr_patty_1"></div>
+	<div class="brgr_patty_2"></div>
+	<div class="brgr_patty_3"></div>
+
+	<div id="brgr_menu" class="brgr_menu">
+	    <a id="brgr_menu_item" href="projects.html">Projects</a>
+	    <a id="brgr_menu_item" href="porfolio.html">Portfolio</a>
+	    <a id="brgr_menu_item" href="contact.html">Contact</a>
+	</div>
+    </div>
+</div>
+
+<div id=main_image_frame>
+    <div id=focus_image>
+        <img src="AT_AT_wiremodel.png" width=100% height=auto alt="AT_AT pic">
+	<h2><div style="margin-left:10px; margin-top:5px"> Brian's Portfolio </div> 
+	    <div class = "unselectable"> Newline </div>
+	</h2>
+    </div>
+</div>
+
+
+<div id=paper>
+	<div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    <div id=text_header> Intro
+        <div id=text_body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. 
+        </div>
+    </div>
+    <div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+</div>
+
+<div id=main_image_frame>
+    <div id=secondary_focus>
+        <img src="booth/front_facade.png" width=100% height=auto alt="AT_AT pic">
+	<h2 style="top: 140%;"><div style="margin-left:10px; margin-top:5px"> Star Wars Booth 2017 </div> 
+	    <div class = "unselectable"> Newline </div>
+	</h2>
+    </div>
+</div>
+
+<div id=paper>
+	<div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    <div id=text_header> Intro
+        <div id=text_body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. 
+        </div>
+    </div>
+    <div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+</div>
+
+<div id=main_image_frame>
+    <div id=secondary_focus style="width:100%; max-width:375px;">
+        <img src="spring_cleaning/fwd_hop.gif" width=100% height=auto alt="main spring cleaning gif" style="border-radius:20px">
+	<h2 style="top: 230%;"><div style="margin-left:10px; margin-top:5px"> Spring Cleaning VR </div> 
+	    <div class = "unselectable"> Newline </div>
+	</h2>
+    </div>
+</div>
+
+<div id=paper>
+	<div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+    <div id=text_header> Intro
+        <div id=text_body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non lacus in viverra. Ut quis imperdiet felis. Vestibulum viverra dolor et neque efficitur maximus. Duis aliquet arcu in velit aliquet, et dapibus eros pretium. Pellentesque fringilla aliquet nunc, sed ultricies ipsum ultrices eget. Vestibulum id tortor laoreet, efficitur lectus sed, hendrerit metus. Morbi at maximus nulla, ac hendrerit velit. Aliquam sodales ipsum nulla, sed rutrum leo rutrum nec. Vestibulum consectetur sed libero sed rhoncus. Maecenas eget sapien quis lorem mattis varius ac vel lacus. Mauris et metus metus. Suspendisse lacinia orci felis, eu scelerisque nulla elementum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget placerat arcu. Etiam lobortis non eros ac accumsan. 
+        </div>
+    </div>
+    <div class="unselectable"> FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+</div>
+
+
+
+

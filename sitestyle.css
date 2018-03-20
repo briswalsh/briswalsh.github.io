@@ -3,6 +3,7 @@
     }
 
     .unselectable {
+	color: rgba(0,0,0,0);
 	-moz-user-select: -moz-none;
 	-khtml-user-select: none;
 	/*

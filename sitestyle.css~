@@ -3,6 +3,7 @@
     }
 
     .unselectable {
+	color: rgba(0,0,0,0);
 	-moz-user-select: -moz-none;
 	-khtml-user-select: none;
 	/*
@@ -178,7 +179,7 @@
 	text-decoration: none;
 	display: block;
 	background-color: #E5E5E5;
-	border-right: 8px solid;
+	border-right: 4px solid;
 	border-color: #A4A4A4;
 	z-index: 0;
     }

@@ -52,8 +52,59 @@ i
     }
 </script>
 
+<style type="text/css">
+    .logo_container {
+	top: 2em;
+	padding-top: 5em;
+	padding-bottom: 2em;
+	width: 10%;
+	margin-left: 12%;
+	z-index: 1;
+    }
+
+    .logo {
+	display: block;
+	width:100%;
+	height:auto;
+	border-radius:10px;
+    }
+    .logo:hover {
+	cursor: pointer;
+	opacity: 0.5;
+	transition: 0.4s;
+    }
+
+    .contact_portal_frame {
+	margin-left: -10px;
+	width: 105%;
+	height: 50%;
+	max-height: 400px;
+	background-color: #0033CC;
+	z-index: -1;
+	overflow:hidden;
+    }
+
+    .form {
+	display:none;
+    }
+
+    .form_submit {
+	padding-top: 0.3em;
+    }
+
+    .prompt_main {
+	padding-bottom: 0.08em;
+    }
+
+    .prompt {
+	padding-top: 0.3em;
+	padding-bottom: 0.08em;
+    }
+
+
+</style>
+
 <link rel="stylesheet" type="text/css" href="sitestyle.css">
-<link rel="stylesheet" type="text/css" href="mailstyle.css">
 
 <title>Contact Brian</title>
 
