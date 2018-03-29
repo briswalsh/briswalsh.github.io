@@ -28,7 +28,7 @@
 
 <title>Brian Walsh - Home</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.3, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
 
 </head>
 
@@ -55,7 +55,7 @@
 
 <div id=main_image_frame>
     <div id=main_image>
-        <img src="main_images/GoldenRetriever_Hero_Trans.png" width=100% height=auto alt="profile pic">
+        <img src="main_images/GoldenRetriever_Hero_Trans.png" width=104% height=auto alt="profile pic">
         <h2> My Work 
             <span> 
                 <a href="portfolio.html"> See Portfolio > </a> 

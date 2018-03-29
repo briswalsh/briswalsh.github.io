@@ -5,6 +5,10 @@
 	font-weight: 400;
     }
 
+    body {
+	max-width: 100%;
+    }
+
     .unselectable {
 	color: rgba(0,0,0,0);
 	-moz-user-select: -moz-none;
