@@ -225,7 +225,7 @@
     #main_image_frame {
 	margin-left: -10px;
 	width: 105%;
-	max-height: 450px;
+	max-height: 600px;
 	background-color: #66CCFF;
 	z-index: -1;
     }
