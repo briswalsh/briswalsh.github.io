@@ -1,13 +1,10 @@
-    html {
+    html, body {
 	overflow-x:hidden;
 	max-width: 100%;
 	font-family:"Helvetica", helvetica, sans-serif;
 	font-weight: 400;
-    }
-
-    body {
-	overflow-x: hidden;
-	max-width: 100%;
+	margin: 0;
+	padding: 0;
     }
 
     .unselectable {
@@ -33,11 +30,11 @@
     h2 { 
     	position: absolute; 
     	top: 170px; 
-    	left: 60%; 
-    	width: 103%;
+    	left: 60%; /* change for smaller display */ 
+    	width: 60%;
     	height: 75px;
     	/* aesthetic aspects */
-	font-family: "Varela";
+	font-family: "Helvetica", helvetica, sans-serif;
     	color: #A4A4A4;
     	background-color: rgba(255,255,255,0.8);
     	border-color: rgba(255,255,255,0.8);
@@ -52,7 +49,7 @@
     }
     h2 span a {
     	text-decoration: none;
-	font-weight: normal;
+	font-weight: bold;
     	Color: #E5E5E5;
     	background-color: #A4A4A4;
     	border-style: solid;
@@ -79,8 +76,7 @@
 
     #main_menu_container {
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
-        margin: -10px;
-	width: 102%;
+	width: 100%;
         position: fixed;
 	background: #F2F2F2;
 	z-index: 10;
@@ -102,7 +98,28 @@
 	width: 20px;
 	height: 20px;
 	padding: 20px;
+    }    
+    .text_btn {
+        /* Alignment */
+        float: right;
+	display: inline-block;
+	/* Size Formatting */
+	font-size: 20px;
+	width: 80px;
+	height: 20px;
+	padding: 20px;
     }
+    
+    #btn_right {
+	color: #A4A4A4;
+	margin-right: 2px;
+    }
+    #btn_right:hover {
+ 	transition: .5s;
+ 	color: #A4A4A4;
+	background-color: #0033CC;
+    }
+ 
 
     .brgr_btn {
 	background-color: rgba(0,0,0,0);
@@ -229,36 +246,26 @@
     }
 
     #main_image_frame {
-	margin-left: -10px;
-	width: 105%;
-	max-height: 600px;
+	width: 100%;
+	max-height: 400px;
 	background-color: #66CCFF;
 	z-index: -1;
+	overflow-y: visible;
     }
 
     #main_image {
-	overflow: hidden;
-	top: 2em;
-	width: 105%;
+	position: relative;
+	overflow: visible;
+	top: 1.5em;
+	width: 100%;
         height: auto;
-	max-width: 375px;
+	max-width: 50%;
 	margin: auto;
-	margin-left: 10px;
+	margin-left: 1.5%;
 	margin-top; 40px;
-	padding-top: 1.15em;
-	z-index: 1;
+	z-index: 6;
     }
 
-    #paper {
-	position: relative;
-	margin-top: 0px;
-	margin-left: -10px;
-	width: 105%;
-	background-image:url("main_images/light_bckgrd.jpg");
-	z-index: 4;
-	color: rgba(0,0,0,0);
-    }
-    
     #text_header {
 	position: relative;
 	color: #757575;
@@ -271,12 +278,87 @@
 	padding-bottom: 5px;
 	padding_right: 20px;
 	top: 25px;
-	margin-left: 35px;
+	margin-left: 47%;
 	margin-bottom: 30px;
 	margin-right: 65px;
 	border-radius: 10px;
 	z-index: 5;
     }
+
+    @media screen and (max-width: 800px) {
+	#main_image_frame {
+	    width: 100%;
+	    max-height: 600px;
+	    background-color: #66CCFF;
+	    z-index: -1;
+        }
+
+	#main_image {
+	    overflow: hidden;
+	    top: 1.1em;
+	    width: 100%;
+            height: auto;
+	    max-width: 375px;
+	    margin: auto;
+	    margin-left: 10px;
+	    margin-top; 40px;
+	    padding-top: 1.15em;
+	    z-index: 1;
+        }
+
+	#text_header {
+	    position: relative;
+	    color: #757575;
+	    font-size: 22px;
+	    font-weight: bold;
+	    background-image:url("main_images/dark_bckgrd.jpg");
+	    background-repeat:repeat;
+	    padding-left: 5%;
+	    padding-top: 12px;
+	    padding-bottom: 5px;
+	    padding_right: 5%;
+	    top: 25px;
+	    margin-left: 5%;
+	    margin-right: 7%;
+	    margin-bottom: 30px;
+	    border-radius: 10px;
+	    z-index: 5;
+	}
+    }
+
+    @media screen and (max-width: 600px) {
+	h2 {
+	    display: none;
+	}
+
+	.text_btn {
+	    display: none;
+	}
+
+	#main_image {
+	    overflow: hidden;
+	    top: 1.1em;
+	    width: 100%;
+            height: auto;
+	    max-width: 375px;
+	    margin: auto;
+	    margin-top; 40px;
+	    padding-top: 1.15em;
+	    z-index: 1;
+        }
+    }
+
+    #paper {
+	position: relative;
+	box-shadow: 0px -8px 5px rgba(0,0,0,0.1);
+	margin-top: 0px;
+	margin-left: -10px;
+	width: 105%;
+	background-image:url("main_images/light_bckgrd.jpg");
+	z-index: 4;
+	color: rgba(0,0,0,0);
+    }
+     
     #text_body {
 	font-family: "Helvetica", helvetica, sans-serif;
 	font-weight: normal;
