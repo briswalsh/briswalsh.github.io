@@ -71,7 +71,7 @@
 	color: #B9B7B7;
     }
     a strong {
-	color: #E5E5E5;
+	color: #A4A4A4;
     }
 
     #main_menu_container {
@@ -242,7 +242,7 @@
     #home_btn_left:hover {
 	transition: .5s;
 	color: #E5E5E5;
-	background-color:  #66CCFF; 
+	background-color: #0033CC; 
     }
 
     #main_image_frame {

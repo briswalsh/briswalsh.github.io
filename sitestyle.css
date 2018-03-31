@@ -242,7 +242,7 @@
     #home_btn_left:hover {
 	transition: .5s;
 	color: #E5E5E5;
-	background-color:  #66CCFF; 
+	background-color: #0033CC; 
     }
 
     #main_image_frame {
@@ -369,7 +369,7 @@
 	padding-right: 10px;
 	margin-right: 25px;
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	text-align: justify;
 	font-size: 16px;
 	z-index: 5;
