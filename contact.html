@@ -75,8 +75,7 @@
     }
 
     .contact_portal_frame {
-	margin-left: -10px;
-	width: 105%;
+	width: 100%;
 	height: 50%;
 	max-height: 400px;
 	background-color: #0033CC;
@@ -101,12 +100,34 @@
 	padding-bottom: 0.08em;
     }
 
+    #phone_logos {
+	display: none;
+    }
 
+    @media screen and (max-width: 600px) {
+	.form {
+	    display: inline;
+	}
+
+        #phone_logos {
+	    display: inline;
+	}
+
+	#bio {
+	    display: none;
+	}
+
+	.contact_portal_frame {
+	    display: none;
+	}
+    }
 </style>
 
 <link rel="stylesheet" type="text/css" href="sitestyle.css">
 
 <title>Contact Brian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
 
 </head>
 
@@ -118,44 +139,62 @@
 	    </a>
         </div>
     </div>
-    <div class="brgr_btn" onclick="brgr_btn(this)">
-	<div class="brgr_patty_1"></div>
-	<div class="brgr_patty_2"></div>
-	<div class="brgr_patty_3"></div>
+    <div class="row_right">
+	<div class="brgr_btn" id=btn_right onclick="brgr_btn(this)">
+	    <div class="brgr_patty_1"></div>
+	    <div class="brgr_patty_2"></div>
+	    <div class="brgr_patty_3"></div>
 
-	<div id="brgr_menu" class="brgr_menu">
-	    <a href="projects.html">Projects</a>
-	    <a href="porfolio.html">Portfolio</a>
-	    <a href="contact.html">Contact</a>
+	    <div id="brgr_menu" class="brgr_menu">
+		<a id="brgr_menu_item" href="projects.html">Projects</a>
+		<a id="brgr_menu_item" href="portfolio.html">Portfolio</a>
+		<a id="brgr_menu_item" href="contact.html">Contact</a>
+	    </div>
+	</div>
+	<div class="text_btn" id=btn_right>
+	    <a href="contact.html" style="text-decoration:none">
+		<strong color=#000000>Contact</strong>
+	    </a>
+	</div>	
+	<div class="text_btn" id=btn_right>
+	   <a href="portfolio.html" style="text-decoration:none">
+		<strong>Portfolio</strong>
+	   </a>
 	</div>
     </div>
 </div>
 
+<div id=phone_logos>
+    <div id=main_image_frame>
+        <div id=main_image>
+	    <img src="main_images/email_logo.png" width=100% height=auto alt="email logo">        
+        </div>
+    </div>
+</div>
+
 <div class=contact_portal_frame>
-    <div class=logo_container style="float:left">
-	<div onclick="email_form()">
-	    <img src="main_images/email_logo.png" alt="email logo" class="logo">
-	</div>
+    <div class=logo_container id=email_logo style="float:left">
+	    <div onclick="email_form()">
+	        <img src="main_images/email_logo.png" alt="email logo" class="logo">
+	    </div>
+        </div>
+        <div class=logo_container style="float:left">
+	    <img src="main_images/linkedin_logo.png" alt="li logo" class="logo">
+        </div>
+        <div class=logo_container style="float:left">	
+	    <a href="https://github.com/briswalsh">
+	        <img src="main_images/GitHub_logo.png" alt="git logo" class="logo">
+	    </a>
+        </div>
+        <div class=logo_container style="float:left">	
+	    <a href="https://www.instagram.com/briswalsh/">
+	        <img src="main_images/insta_logo.png" alt="insta logo" class="logo">
+	    </a>
+        </div>
     </div>
-    <div class=logo_container style="float:left">
-	<img src="main_images/linkedin_logo.png" alt="li logo" class="logo">
-    </div>
-    <div class=logo_container style="float:left">	
-	<a href="https://github.com/briswalsh">
-	    <img src="main_images/GitHub_logo.png" alt="git logo" class="logo">
-	</a>
-    </div>
-    <div class=logo_container style="float:left">	
-	<a href="https://www.instagram.com/briswalsh/">
-	    <img src="main_images/insta_logo.png" alt="insta logo" class="logo">
-	</a>
-    </div>
-    </div>
-    </div>
+</div>
 
 <div id=paper>
-    <div class=unselectable> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
-    
     <div class=form id=email_form>
 	<div id=text_header> Compose Email
             <div id=text_body>
@@ -178,11 +217,68 @@
 	</div>
     </div>
 
-    <div id=text_header> Contact Brian
-        <div id=text_body>You can click on the above icons to contact me via email, or my respective profiles. If you are trying to reach me personally, I am most quick to respond to email. I use git for primarily making video games (and also for making this website). You can use linkedin to connect with me professionally, and instagram to see what I'm up to from day to day.
-        </div>
-	<div id=text_body>If you would like to look at some of my work, feel free to check out my <a href="portfolio.html">portfolio</a>. If you find yourself more in the mood to see my eclectic personal works (and works in progress) you can view my <a href="projects.html">projects</a>.
+    <div id=bio>
+        <div id=text_header style="margin-right:6%"> Contact Brian
+            <div id=text_body>You can click on the above icons to contact me via email, or my respective profiles. If you are trying to reach me personally, I am most quick to respond to email. I use git for primarily making video games (and also for making this website). You can use linkedin to connect with me professionally, and instagram to see what I'm up to from day to day.
+            </div>
+	    <div id=text_body>If you would like to look at some of my work, feel free to check out my <a href="portfolio.html">portfolio</a>. If you find yourself more in the mood to see my eclectic personal works (and works in progress) you can view my <a href="projects.html">projects</a>.
+            </div>
         </div>
     </div>
-    <div class=unselectable> FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER FILLER </div>
+
+    <div class=unselectable> Newline 
+    </div>
 </div>
+
+<div id=phone_logos>
+    <div id=main_image_frame>
+        <div id=main_image style="top:0px;">
+	    <img src="main_images/linkedin_logo.png" width=100% height=auto alt="li logo">        
+        </div>
+    </div>
+
+    <div id=paper>
+        <div id=text_header> Linkedin
+	    <div id=text_body>
+		This is some yung filler stuff. You think I wouldn't put filler in? Well... you thought wrong. Get got, fool.
+	    </div>
+        </div>
+        <div class=unselectable> Newline 
+        </div>
+    </div>
+
+    <div id=main_image_frame>
+        <div id=main_image style="top:0px;">
+	    <img src="main_images/GitHub_logo.png" width=100% height=auto alt="git logo">        
+        </div>
+    </div>
+
+    <div id=paper>
+        <div id=text_header> Github
+	    <div id=text_body>
+		This is some yung filler stuff. You think I wouldn't put filler in? Well... you thought wrong. Get got, fool.
+	    </div>
+        </div>
+    <div class=unselectable> Newline 
+    </div>
+
+    </div>
+
+    <div id=main_image_frame>
+        <div id=main_image style="top:0px;">
+	    <img src="main_images/insta_logo.png" width=100% height=auto alt="inst logo">        
+        </div>
+    </div>
+
+    <div id=paper>
+        <div id=text_header> Instagram 
+	    <div id=text_body>
+		This is some yung filler stuff. You think I wouldn't put filler in? Well... you thought wrong. Get got, fool.
+	    </div>
+        </div>
+        <div class=unselectable> Newline 
+        </div>
+    </div>
+</div>
+
+

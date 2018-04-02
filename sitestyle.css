@@ -266,6 +266,18 @@
 	z-index: 6;
     }
 
+    #margin_image {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+        height: auto;
+	max-width: 50%;
+	margin: auto;
+	margin-left: 1.5%;
+	margin-top; 40px;
+	z-index: 6;	
+    }
+
     #text_header {
 	position: relative;
 	color: #757575;
@@ -305,6 +317,10 @@
 	    padding-top: 1.15em;
 	    z-index: 1;
         }
+
+	#margin_image {
+	    display: none;
+	}
 
 	#text_header {
 	    position: relative;
@@ -350,7 +366,7 @@
 
     #paper {
 	position: relative;
-	box-shadow: 0px -8px 5px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
 	margin-top: 0px;
 	margin-left: -10px;
 	width: 105%;

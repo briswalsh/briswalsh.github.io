@@ -51,6 +51,21 @@
 	z-index: 6;
     } 
 
+    #video_highlight_container {
+	top: 25px;
+	bottom: 25px;
+	background-color: black;
+	margin-left: 47%;
+	margin-right: 65px;
+	border-radius: 10px; 
+    }
+
+    #video_highlight {
+	horizontal-align: middle;
+	width: 80%;
+	height: auto;
+    }
+
     @media screen and (max-width: 800px) {
 	#focus_image {
 	    overflow: hidden;
@@ -80,23 +95,12 @@
 	}
 	
 	#video_highlight_container {
-	    margin-left: 36px;
+	    top: 25px;
+	    bottom: 25px;
+	    background-color: black;
+	    margin-left: 5%;
+	    margin-right: 7%;
 	}
-    }
-
-    #video_highlight_container {
-	top: 25px;
-	bottom: 25px;
-	background-color: black;
-	margin-left: 47%;
-	margin-right: 65px;
-	border-radius: 10px; 
-    }
-
-    #video_highlight {
-	horizontal-align: middle;
-	width: 80%;
-	height: auto;
     }
 
     @media screen and (max-width: 600px) {
@@ -130,6 +134,8 @@
 <link rel="stylesheet" type="text/css" href="sitestyle.css">
 
 <title>Brian Walsh - Portfolio</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
 
 </head>
 
@@ -205,8 +211,8 @@
 </div>
 
 <div id=main_image_frame>
-	<div id=secondary_focus>
-        <img src="spring_cleaning/fwd_hop.gif" width=100% height=auto alt="main spring cleaning gif" style="border-radius:20px">
+    <div id=secondary_focus>
+    <img src="spring_cleaning/fwd_hop.gif" width=100% height=auto alt="main spring cleaning gif" style="border-radius:20px">
     </div>
     <h2 style="top: 230%;">i
 	<div style="margin-left:10px; margin-top:5px"> Spring Cleaning VR </div> 
@@ -215,6 +221,9 @@
 </div>
 
 <div id=paper>
+    <div id=margin_image>
+	<img src="spring_cleaning/dejected_smack.gif" width=100% height=auto style="border-radius:20">
+    </div>
     <div id=text_header> VR Development
         <div id=text_body> Spring Cleaning is a brief VR game that I made with Unity in a team of 6. We were given 6 weeks to create a game that added a twist to recreational lawn games. Our team chose to modify croquet. The game demos the different type of puzzles you can create when you push croquet to 3 Dimensions instead of one plane.
         </div>
