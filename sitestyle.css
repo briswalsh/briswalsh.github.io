@@ -29,7 +29,7 @@
     }
     h2 { 
     	position: absolute; 
-    	top: 170px; 
+    	top: 150px; 
     	left: 60%; /* change for smaller display */ 
     	width: 60%;
     	height: 75px;
@@ -386,7 +386,7 @@
 	margin-right: 25px;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	text-align: justify;
+	text-align: left;
 	font-size: 16px;
 	z-index: 5;
     }

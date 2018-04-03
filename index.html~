@@ -87,16 +87,8 @@
 	    <div id=text_body>I built this website from scratch. Most of my previous web-design utilized twitter's bootstrap (a useful tool, but I wanted to prove to myself I could make something customized that also looked good). It's safe to say that I am proffecient in html, css, and javascript (including nodeJS and JQuery: I also have dealt with many RESTful services in my different career responsibilities).
         </div>
 	<div id=text_body>As well as having programming experience (mostly C#), I also have experience in project management, having managed a team of over 75 people, and balancing a budget of just over $12,000 (you can read about that <a href="portfolio.html">here</a>). I am very accustomed to working on teams, and prefer group work to individual work. If you'd like to know more about me, you can just browse this website, and I would be very appreciative of any <a href="contact.html">feedback</a> you can give.
-	<div class="unselectable"> Newline </div>
-    </div>
-
-
-        <div id=text_body>
-	    <img src="main_images/seared_tuna_benedict.jpg" style="float: right; margin: 10px 5px 15px 15px;" width=120px height=100% alt="sample highlight">
- Morbi eleifend tempus velit sed vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut nec nibh quis nunc euismod fringilla. Etiam id elit ut quam varius iaculis. Vestibulum lorem risus, pellentesque at dui in, lobortis porta purus. Morbi a imperdiet elit. Nulla vulputate tempor purus mattis tincidunt. Mauris pulvinar, enim imperdiet tincidunt gravida, velit dui mollis lacus, sit amet sollicitudin lacus tortor ut purus. Cras et mi vel elit dapibus dictum id vel eros. Maecenas in dui cursus, tempor velit non, consectetur leo. Integer eu purus non neque efficitur feugiat sed et erat. Cras facilisis est lacus, in luctus lorem consectetur a. Ut ultricies fringilla metus, vitae pulvinar nulla accumsan ut. Ut pharetra, nulla id consequat porta, felis lectus luctus metus, ac finibus tellus ex nec tortor.
-	</div>
-    </div>
-    <div class="unselectable"> Newline </div>
+	 </div>
+    <div class="unselectable"> Newline </div>   
 </div>
 
 

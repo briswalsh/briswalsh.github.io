@@ -366,7 +366,7 @@
 
     #paper {
 	position: relative;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
 	margin-top: 0px;
 	margin-left: -10px;
 	width: 105%;
@@ -386,7 +386,7 @@
 	margin-right: 25px;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	text-align: justify;
+	text-align: left;
 	font-size: 16px;
 	z-index: 5;
     }
