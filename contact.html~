@@ -167,7 +167,7 @@
 <div id=phone_logos>
     <div id=main_image_frame>
         <div id=main_image>
-	    <img src="main_images/email_logo.png" width=100% height=auto alt="email logo">        
+	    <img src="main_images/email_logo.png" style="width:80%; margin-left:10%" height=auto alt="email logo">        
         </div>
     </div>
 </div>
