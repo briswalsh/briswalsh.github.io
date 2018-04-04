@@ -78,7 +78,7 @@
 	width: 100%;
 	height: 50%;
 	max-height: 400px;
-	background-color: #0033CC;
+	background-color: #66CCFF;
 	z-index: -1;
 	overflow:hidden;
     }
@@ -167,7 +167,7 @@
 <div id=phone_logos>
     <div id=main_image_frame>
         <div id=main_image>
-	    <img src="main_images/email_logo.png" style="width:80%; margin-left:10%" height=auto alt="email logo">        
+	    <img src="main_images/email_logo.png"  style="width:80%; height:auto; margin-left:10%" alt="email logo">        
         </div>
     </div>
 </div>
@@ -233,7 +233,7 @@
 <div id=phone_logos>
     <div id=main_image_frame>
         <div id=main_image style="top:0px;">
-	    <img src="main_images/linkedin_logo.png" width=100% height=auto alt="li logo">        
+	    <img src="main_images/linkedin_logo.png" style="width:80%; height:auto; margin-left:10%" alt="li logo">        
         </div>
     </div>
 
@@ -249,12 +249,13 @@
 
     <div id=main_image_frame>
         <div id=main_image style="top:0px;">
-	    <img src="main_images/GitHub_logo.png" width=100% height=auto alt="git logo">        
+	    <img src="main_images/GitHub_logo.png" style="width:80%; height:auto; margin-left:10%" alt="git logo">        
         </div>
     </div>
 
     <div id=paper>
-        <div id=text_header> Github
+	    <div id=text_header> 
+		<a href="https://github.com/briswalsh">Github</a>
 	    <div id=text_body>
 		This is some yung filler stuff. You think I wouldn't put filler in? Well... you thought wrong. Get got, fool.
 	    </div>
@@ -266,12 +267,13 @@
 
     <div id=main_image_frame>
         <div id=main_image style="top:0px;">
-	    <img src="main_images/insta_logo.png" width=100% height=auto alt="inst logo">        
+	    <img src="main_images/insta_logo.png" style="width:80%; height:auto; margin-left:10%" alt="inst logo">        
         </div>
     </div>
 
     <div id=paper>
-        <div id=text_header> Instagram 
+        <div id=text_header> 
+	    <a href="https://www.instagram.com/briswalsh/">Instagram</a> 
 	    <div id=text_body>
 		This is some yung filler stuff. You think I wouldn't put filler in? Well... you thought wrong. Get got, fool.
 	    </div>
