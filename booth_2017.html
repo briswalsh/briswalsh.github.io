@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<head>
+
+<script>
+    function brgr_btn(x) {
+	x.classList.toggle("change");
+	document.getElementById("brgr_menu_item").classList.toggle("change");
+	document.getElementById("brgr_menu").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+		    openDropdown.classList.remove('show');
+		}
+	    }
+	}
+    }
+</script>
+
+<style type="text/css">
+    #focus_image {
+	position: relative;
+	overflow: visible;
+	top: 5.5em;
+	width: 100%;
+        height: auto;
+	max-width: 45%;
+	margin: auto;
+	margin-left: 1.5%;
+	margin-top; 40px;
+	z-index: 6;
+    }
+ 
+    #secondary_focus {
+	position: relative;
+	overflow: hidden;
+	top: 2em;
+	width: 100%;
+        height: auto;
+	max-width: 45%;
+	margin: auto;
+	margin-left: 1.5%;
+	margin-top; 45px;
+	z-index: 6;
+    } 
+
+    #media_highlight_container {
+	top: 25px;
+	bottom: 25px;
+	background-color: black;
+	margin-left: 47%;
+	margin-right: 65px;
+	border-radius: 10px; 
+    }
+
+    #media_highlight {
+	horizontal-align: middle;
+	width: 80%;
+	height: auto;
+    }
+
+    #build_header {
+	top: 210%;
+    }
+
+    #story_header { 
+	top: 365%;
+    }
+
+    #conc_header {
+	top: 1200%;
+    }
+
+    @media screen and (max-width: 800px) {
+	#ent_header {
+	    top: 255%;
+	}
+	    
+	#build_header {
+	    top: 230%;
+	}
+
+	#nt_header {
+	    top:400%;
+	}
+
+	#focus_image {
+	    overflow: hidden;
+	    width: 70%;
+            height: auto;
+	    top: 0em;
+	    max-width: 250px;
+	    margin: auto;
+	    margin-left: 25px;
+	    padding-top: 4.75em;
+	    padding-bottom: 1em;
+	    z-index: 1;
+	}
+
+	#secondary_focus {
+	    overflow: hidden;
+	    top: .25em;
+	    width: 70%;
+            height: auto;
+	    max-width: 300px;
+	    margin: auto;
+	    margin-left: 25px;
+	    margin-top; 45px;
+	    padding-top: 1.1em;
+	    padding-bottom: 1em;
+	    z-index: 1;
+	}
+	
+	#media_highlight_container {
+	    top: 25px;
+	    bottom: 25px;
+	    background-color: black;
+	    margin-left: 5%;
+	    margin-right: 7%;
+	}
+    }
+
+    @media screen and (max-width: 600px) {
+	#focus_image {
+	    overflow: hidden;
+	    top: 1.1em;
+	    width: 80%;
+            height: auto;
+	    max-width: 375px;
+	    margin: auto;
+	    margin-top; 40px;
+	    padding-top: 5em;
+	    padding-bottom: 3em;
+	    z-index: 1;
+	}
+
+	#secondary_focus {
+	    overflow: hidden;
+	    top: 1.1em;
+	    width: 80%;
+            height: auto;
+	    max-width: 375px;
+	    margin: auto;
+	    margin-top; 40px;
+	    padding-top: 1.15em;
+	    padding-bottom: 3em;
+	    z-index: 1;
+	}
+    }
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="sitestyle.css">
+
+<title>Sigep Booth 2017</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+
+</head>
+
+<div id=main_menu_container>
+    <div class="row_left">
+        <div class="dft_menu_btn" id="home_btn_left">
+	    <a href="index.html" style="text-decoration:none">
+		<img src="main_images/home_icon.png" alt="Home Button" height="20px" width="20px"></a>
+        </div>
+    </div>
+    <div class="row_right">
+	<div class="brgr_btn" id=btn_right onclick="brgr_btn(this)">
+	    <div class="brgr_patty_1"></div>
+	    <div class="brgr_patty_2"></div>
+	    <div class="brgr_patty_3"></div>
+
+	    <div id="brgr_menu" class="brgr_menu">
+		<a id="brgr_menu_item" href="projects.html">Projects</a>
+		<a id="brgr_menu_item" href="portfolio.html">Portfolio</a>
+		<a id="brgr_menu_item" href="contact.html">Contact</a>
+	    </div>
+	</div>
+	<div class="text_btn" id=btn_right>
+	    <a href="contact.html" style="text-decoration:none">
+		<strong color=#000000>Contact</strong>
+	    </a>
+	</div>	
+	<div class="text_btn" id=btn_right>
+	   <a href="portfolio.html" style="text-decoration:none">
+		<strong>Portfolio</strong>
+	   </a>
+	</div>
+    </div>
+</div>
+
+<div id=main_image_frame>
+    <div id=focus_image>
+        <img src="booth/front_facade.png" style="width:100%; height:auto; border-radius:20px" alt="AT_AT pic">	
+    </div>
+    <h2>
+	<div style="margin-left:10px; margin-top:5px"> Sigep Booth 2017 </div> 
+	<div class = "unselectable"> Newline </div>
+    </h2>
+</div>
+
+
+<div id=paper>
+    <div id=text_header> Star Wars Booth
+	    <div id=text_body>Booth is a 3 day interactive installation put on by several organizations at Carnegie Mellon University. I was part of the organization Sigma Phi Epsilon, and in April, 2017, our booth theme was Star Wars. We chose to center our booth on The Force Awakens (the first installment in the new sequel trilogy).
+        </div>
+    </div>
+    <div class="unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/blast.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> Concept
+	<div id=text_body> The entrance to our booth was a fallen AT-AT. This idea was originally coonceived in a small brainstorming group. I designed the fallen AT_AT (to get the team's ball rolling). This involved mocking up designs in rhino, working with our architect on converting it to a structure, and keeping the team up to date.
+	</div>
+    </div>
+    <div class="unselectable"> Newline </div>
+</div>
+
+<div id=main_image_frame>
+    <div id=secondary_focus>
+        <img src="booth/front_blueprint.jpg" style="width:100%; height:auto; border-radius:20px; top:1em; padding-top:0em" width=100% height=auto alt="Blueprint">
+    </div>
+    <h2 id="build_header">
+        <div style="margin-left:10px; margin-top:5px">
+	    Design
+	</div> 
+	<div class = "unselectable"> Newline </div>
+    </h2>
+</div>
+
+<div id=paper>
+    <div id=text_header> Managing the Process
+        <div id=text_body> 
+	    The entrance to our booth was a fallen AT-AT. This idea was originally coonceived in a small brainstorming group. I helped design the fallen AT_AT front facade (to get the team's ball rolling). This involved mocking up designs in rhino, working with our architect on converting it to a structure, and keeping the team up to date.
+	</div>
+	<div id=text_body>
+	    The plans had to be approved by the civil engineering department, the event committee, and had to be fire safe. We coordinated for a dedicated electrical manager from our fraternity to work with us on rigging electricity through the booth on the week we opened. We made electrical a priority, as it is usually a major bottleneck in the building process.
+	</div>
+	<div id=text_body> 
+	By late January, we had our plans finalized, and we were ready to begin building. We (my co-chairman James and I) also started planning interior and exterior designs with the room managers - there were nine in total - and planned out a budget for each room. The overall budget we had was $12,000 (it's worth noting that we came in $2,000 under), and it was my responsibility to keep track of the budget: James and I had the sole responsibility over approving reimbursements for purchases.
+	</div>
+	<div id=text_body> 
+	From there, we built the structure from the ground up. We constructed it in pieces over about a month, and then had one week to assemble before opening. 
+	</div>
+    </div>
+    <div class="unselectable"> Newline </div>
+</div>
+
+<div id=main_image_frame>
+    <div id=secondary_focus>
+        <img src="booth/sign.jpg" style="width:100%; height:auto; border-radius:20px; top:1em; padding-top:0em" alt="AT_AT pic">	
+    </div>
+    <h2 id="story_header">
+        <div style="margin-left:10px; margin-top:5px">
+	    Story
+	</div> 
+	<div class = "unselectable"> Newline </div>
+    </h2>
+</div>
+
+<div id=paper>
+    <div id=text_header>
+	
+        <div id=text_body>
+	    We, as a team, then decided how we wanted to convey the story of The Force Awakens in just about 4 rooms and two stairwells, all the while including a game for the visitors. We chose to use the stairwells as rooms that would transition from major geographic shifts in the story-line. The whole concept wound up evolving as follows:
+	</div>
+    </div>
+    <div class="unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/paraphernalia.jpg" style="width:80%; height:auto; padding-left:10%;" alt="stairwell_1">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> The front of the booth would depict Rey's home: a fallen AT-AT; the first stairwell would depict the interior of that structure. Rey's rebel paraphernalia lined the walls on the AT-AT's interior.
+	</div>
+    </div>
+    <div class="unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/falcon_hallway.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> After leaving the first stairwell, guests would enter the millennium falcon just as Rey and Finn entered to fight off the first order.
+	</div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/falcon_turret.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> From here, entering Finn's experience, the guests would don a HTC VIVE headset and fight off first order ships from the Falcon’s turret.
+	</div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/maz_kanata.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> After prevailing and escaping jakku, visitors were led into an open air courtyard, modeled after Maz Kanata’s castle courtyard from the film. The design of this courtyard allowed for a game queue to form without causing too much congestion and backup in the booth.
+	</div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/vision.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> The experience would then parallel Rey's Vision as the users followed a stairwell down to the depths of Maz's castle.
+	</div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/diorama_gorge.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> The vision led users into the duel with Rey and Kylo Ren.
+	</div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+    <div id=media_highlight_container>
+	<img src="booth/diorama_oscillator.jpg" style="width:80%; height:auto; padding-left:10%;" alt="entrance sign">
+    </div>
+    <div id=text_header> 
+	<div id=text_body> And then the users exited the booth through an exit that paralleled the exterior of the First Order's starkiller base.
+	</div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+</div>
+
+
+<div id=main_image_frame>
+    <div id=secondary_focus>
+        <img src="booth/back_facade.jpg" style="width:97.5%; height:auto; border-radius:20px; top:1em; padding-top:0em" width=100% height=auto alt="Blueprint">
+    </div>
+    <h2 id="conc_header">
+        <div style="margin-left:10px; margin-top:5px">
+		<div style="z-index:10">Lessons Learned</div>
+	</div> 
+	<div class = "unselectable"> Newline </div>
+    </h2>
+</div>
+    <div id=text_header> Conclusion 
+	<div id=text_body> The entire endeavor of building booth was a valuable lesson for me in project management, budgeting, teamwork, and perserverence. For instance, I found that many of the room designers created their best work when they were given more leway to explore their ideas. Sometimes they would be bad, but the good always turned out being much more satisfying than if they had been constrained to strict ideas.
+	</div>
+	<div id=text_body> Also, I learned how to persevere in extremely stressful situations. This happens often in producing any product, that things beyond a team's control can dictate the timeline. The most difficult for our team was the weather during the construction week. Several delays and many flooding problems tested our preparedness for power shortages, water damage, and work distribution.
+	</div>
+	<div id=text_body> The second most difficult thing to deal with was membership involvement. Being part of a fraternity, there are some barriers that arise when asking members to spend their time with construction and arts. There aren't many opportunities that students get free time, and for many, booth is not a relaxing way to spend it. As the leader, I learned that sometimes if there are not enough people, you can still make it work. We had a dedicated 20-30 members who I would say were the most passionate, and fostering a positive workspace (despite stressful hurdles) led to the best results. The workspace was not always the most positive place, but simple things like letting workers play their own music, clearly explaining tasks for someone else to manage, and knowing where your expertise lies helps everyone else around you function positively.  
+        </div>
+	<div id=text_body> I honestly could write a book about what I learned, and how I could do the same work better in the future. Being responsible for something so important to me gave me a life experience I will never forget, and it made me so proud when our organization won first prize. If I could go back in time, I would decide to go ahead with the project again.
+        </div>
+    </div>
+    <div class = "unselectable"> Newline </div>
+</div>
+
+<div style="position:absolute; top:1200%; z-index:-20"> OMMMMMMMMMMMMMGGGGGGGGGGGGG </div>
