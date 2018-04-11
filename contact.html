@@ -35,13 +35,19 @@
 	address = document.getElementById("email_address_input").value;
 	subj = document.getElementById("subject_input").value;
 	content = document.getElementById("message_input").value;
+	message = content + "\n\nSent by " + address; 
 
 	confirm_message = "\n\n" + address;
 
-
 	if (sent_messages < 1) {
-	    /*emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
-	    emailjs.send("gmail", "template_EbkZPzq3", {"reply_to":address,"from_name":"","from_email":address,"subject":subj,"message_html":content})*/
+	    emailjs.init("user_ZaBVJuc4yvF6sqnRUVJDF");
+	    emailjs.send("gmail", 
+		    "contact_form", 
+		    {"reply_to":"bswalsh101@gmail.com",
+			    "from_name":"",
+			    "from_email":"",
+			    "subject":subj,
+			    "message_html":content});
 	
 	    window.alert("Your message has been sent: \n" + confirm_message);
 	    sent_messages++;

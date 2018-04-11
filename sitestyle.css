@@ -188,19 +188,19 @@
     }
 
     .change .brgr_patty_1 {
-	transform: rotate(-45deg) translate(-6px,6px);
+	transform: rotate(-45deg) translate(-7px,7px);
     }
     .change .brgr_patty_2 {
 	opacity: 0;
     }
     .change .brgr_patty_3 {
-	transform: rotate(45deg) translate(-8px,-8px);
+	transform: rotate(45deg) translate(-7.5px,-8px);
     }
 
     .brgr_menu {
 	display: none;
 	position: absolute;
-	margin-left: -84px;
+	margin-left: -78px;
 	margin-top: 14px;
 	min-width: 120px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
