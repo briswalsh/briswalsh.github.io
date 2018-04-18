@@ -67,7 +67,7 @@
 
 <div id=main_image_frame>
     <div id=main_image>
-	    <img src="main_images/GoldenRetriever_Hero_Trans.png" width=100% height=auto alt="profile pic">        
+	    <img src="main_images/Shinzo_Wake.gif" style="width:50%; height:auto; max-height:50%; padding-left:20%" alt="profile pic">        
     </div>
     <h2> My Work 
             <span> 
@@ -88,6 +88,7 @@
         </div>
 	<div id=text_body>As well as having programming experience (mostly C#), I also have experience in project management, having managed a team of over 75 people, and balancing a budget of just over $12,000 (you can read about that <a href="portfolio.html">here</a>). I am very accustomed to working on teams, and prefer group work to individual work. If you'd like to know more about me, you can just browse this website, and I would be very appreciative of any <a href="contact.html">feedback</a> you can give.
 	 </div>
+    </div>
     <div class="unselectable"> Newline </div>   
 </div>
 
