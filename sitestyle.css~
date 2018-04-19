@@ -205,14 +205,14 @@
 	opacity: 0;
     }
     .change .brgr_patty_3 {
-	transform: rotate(45deg) translate(-7.5px,-8px);
+	transform: rotate(45deg) translate(-4.5px,-4.5px);
     }
 
     .brgr_menu {
 	display: none;
 	position: absolute;
 	margin-left: -78px;
-	margin-top: 14px;
+	margin-top: 20px;
 	min-width: 120px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -243,6 +243,7 @@
 	background-color: #A4A4A4;
 	border-right: 8px solid;
 	border-color: #0033CC;
+	opacity: 1.0;
     }   
 
     .show {

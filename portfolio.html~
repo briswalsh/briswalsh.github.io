@@ -301,8 +301,8 @@
     <div id=text_header>
 	<div id=text_body>In a team of 5, we created this in 3 weeks. We had feedback each week and were able to improve on our design. We learned a lot about feedback and how to improve the user interface. As well as playing the role of producer and presenter for the team, I also modeled the raft, simulated cloth physics on the raft's transom, as well as the rising wave mechanic that leads to the loss-state of the game. If you would like to learn more about the game's process - and my inclusion in it - you can visit the <a href="https://github.com/eosofsky/Sudoku">GitHub page</a>.
         </div>
-    <div class="unselectable"> Newline </div>
     </div>
+    <div class="unselectable"> Newline </div>
 </div>
 
 
