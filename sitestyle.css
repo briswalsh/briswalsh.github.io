@@ -147,11 +147,12 @@
     }
     .brgr_btn:focus {
 	transition: 0.4s;
+	opacity: 1.0;
     }
-    .change .brgr_btn {
-	background-color: #0033CC;
+    .change.brgr_btn:hover {
+	opacity:1.0;
     }
-
+    
     .brgr_patty_1 {
 	font-size: 4px;
 	color: #000000;
