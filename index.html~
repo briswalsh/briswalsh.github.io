@@ -5,7 +5,6 @@
 <script>
     function brgr_btn(x) {
 	x.classList.toggle("change");
-	x.toggleclass("clicked");
 	document.getElementById("brgr_menu_item").classList.toggle("change");
 	document.getElementById("brgr_menu").classList.toggle("show");
     }
