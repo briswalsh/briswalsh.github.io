@@ -149,6 +149,9 @@
 	transition: 0.4s;
 	opacity: 1.0;
     }
+    .change.brgr_btn:hover {
+	opacity:1.0;
+    }
     
     .brgr_patty_1 {
 	font-size: 4px;
@@ -334,7 +337,7 @@
 
 	#text_header {
 	    position: relative;
-	    color: #757575;
+	    color: #000000;
 	    font-size: 22px;
 	    font-weight: bold;
 	    background-image:url("main_images/dark_bckgrd.jpg");
