@@ -283,7 +283,7 @@
 
 <div id=paper>
     <div id=text_header> A reimagining of Sudoku
-	<div id=text_body>A similar prompt to Spring Cleaning, the idea of <a href="portfolio.html">Noah's Tower</a> was to reimagine Sudoku. Since the lead programmer and I were really into the idea of programming for a 3D environment, our team chose to reimagine sudoku onto 4 sides of a cube. </div>
+	<div id=text_body>A similar prompt to Spring Cleaning, the idea of Noah's Tower was to reimagine Sudoku. Since the lead programmer and I were really into the idea of programming for a 3D environment, our team chose to reimagine sudoku onto 4 sides of a cube. </div>
     </div>
     <div class="unselectable"> Newline </div>
     <div id=media_highlight_container>
