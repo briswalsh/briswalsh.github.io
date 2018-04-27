@@ -30,8 +30,8 @@
     h2 { 
     	position: absolute; 
     	top: 150px; 
-    	left: 60%; /* change for smaller display */ 
-    	width: 60%;
+    	left: 55%; /* change for smaller display */ 
+    	width: 25%;
     	height: 75px;
     	/* aesthetic aspects */
 	font-family: "Helvetica", helvetica, sans-serif;
@@ -83,12 +83,77 @@
 	color: #A4A4A4;
     }
 
-    #main_menu_container {
-	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    #site_background {
 	width: 100%;
+	height: 100%;
+	background-image:url("main_images/dark_bckgrd.jpg");
+	background-repeat:repeat;
+    }
+
+    #viewport_container {
+	width: 60%;
+	padding-left: 20%;
+    }
+
+    @media screen and (max-width: 1500px) {
+	#viewport_container {
+	    width: 80%;
+	    padding-left: 10%;
+	    padding-right: 10%;	
+	}
+    }
+
+    @media screen and (max-width: 1080px) {
+        #viewport_container {
+	    width: 100%;
+	    padding-left: 0px;
+	    padding-right 0px;
+        }
+	
+        h2 { 
+    	    position: absolute; 
+    	    top: 150px; 
+    	    left: 60%; /* change for smaller display */ 
+    	    width: 60%;
+    	    height: 75px;
+    	    /* aesthetic aspects */
+	    font-family: "Helvetica", helvetica, sans-serif;
+	    font-weight: 400;
+    	    color: #000000;
+    	    background-color: rgba(255,255,255,0.8);
+    	    border-color: rgba(255,255,255,0.8);
+    	    border-width: 15px;
+    	    border-radius: 10px;
+    	    padding: 10px;
+	    padding-top: 10px;
+	    padding-left: 12px;
+        }
+    }
+
+    #main_menu_container {
+        box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+        width: 60%;
         position: fixed;
-	background: #F2F2F2;
-	z-index: 10;
+        background: #F2F2F2;
+	z-index: 10;	
+    }
+    @media screen and (max-width: 1500px) {
+        #main_menu_container {
+	    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+	    width: 80%;
+            position: fixed;
+	    background: #F2F2F2;
+	    z-index: 10;	
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        #main_menu_container {
+	    box-shadow:0 8px 16px 0px rgba(0,0,0,0.2);
+	    width: 100%;
+            position: fixed;
+	    background: #F2F2F2;
+	    z-index: 10;
+        }
     }
     .row_left {
 	float: left;
@@ -264,6 +329,7 @@
 	background-color: #66CCFF;
 	z-index: -1;
 	overflow-y: visible;
+	box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.1);
     }
 
     #main_image {
@@ -301,11 +367,10 @@
 	padding-left: 20px;
 	padding-top: 12px;
 	padding-bottom: 5px;
-	padding_right: 20px;
 	top: 25px;
-	margin-left: 47%;
+	margin-left: 49%;
 	margin-bottom: 30px;
-	margin-right: 65px;
+	margin-right: 3%;
 	border-radius: 10px;
 	z-index: 5;
     }
@@ -345,10 +410,9 @@
 	    padding-left: 5%;
 	    padding-top: 12px;
 	    padding-bottom: 5px;
-	    padding_right: 5%;
 	    top: 25px;
 	    margin-left: 5%;
-	    margin-right: 7%;
+	    margin-right: 5%;
 	    margin-bottom: 30px;
 	    border-radius: 10px;
 	    z-index: 5;
@@ -398,10 +462,9 @@
 
     #paper {
 	position: relative;
-	box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.1);
+	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1), 0px -10px 5px 0px rgba(0,0,0,0.1);
 	margin-top: 0px;
-	margin-left: -10px;
-	width: 105%;
+	width: 100%;
 	background-image:url("main_images/light_bckgrd.jpg");
 	z-index: 4;
 	color: rgba(0,0,0,0);
