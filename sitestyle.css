@@ -340,7 +340,7 @@
         height: auto;
 	max-width: 45%;
 	margin: auto;
-	margin-left: 1.5%;
+	margin-left: 2.5%;
 	margin-top; 40px;
 	z-index: 6;
     }
@@ -350,7 +350,7 @@
 	overflow: visible;
 	width: 100%;
         height: auto;
-	max-width: 50%;
+	max-width: 45%;
 	margin: auto;
 	margin-left: 1.5%;
 	margin-top; 40px;
@@ -384,16 +384,16 @@
         }
 
 	#main_image {
-	    overflow: hidden;
-	    width: 70%;
+	    overflow: visible;
+	    width: 100%;
             height: auto;
 	    top: 0em;
-	    max-width: 250px;
+	    max-width: 50%;
 	    margin: auto;
 	    margin-left: 25px;
 	    padding-top: 4.75em;
 	    padding-bottom: 1em;
-	    z-index: 1;
+	    z-index: 15;
         }
 
 	#margin_image {

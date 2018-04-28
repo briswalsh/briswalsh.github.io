@@ -69,12 +69,12 @@
 
 <div id=main_image_frame>
     <div id=main_image>
-	    <img src="main_images/AT_AT_wiremodel.png" alt="profile pic">
+	<img src="main_images/AT_AT_wiremodel.png" alt="profile pic" style="width=10px; height=auto;">
     </div>
     <h2> My Work 
-            <span> 
-                <a href="portfolio.html"> See Portfolio > </a> 
-    	    </span>
+        <span> 
+            <a href="portfolio.html"> See Portfolio > </a> 
+    	</span>
     </h2>
 </div>
 
