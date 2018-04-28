@@ -67,4 +67,31 @@
     </div>
 </div>
 
+<div id=main_image_frame>
+    <div id=main_image>
+	    <img src="main_images/AT_AT_wiremodel.png" alt="profile pic">
+    </div>
+    <h2> My Work 
+            <span> 
+                <a href="portfolio.html"> See Portfolio > </a> 
+    	    </span>
+    </h2>
+</div>
+
+
+<div id=paper>
+    <div id=text_header> About Me
+	<div id=text_body>I am a recent graduate of Carnegie Mellon University. I graduated with a Bachelor of Science in Business Administration from the Tepper School of Business. My concentration was Business Technology, and I minored in Game Design. My passions lie at the intersection of business, technology, and the fine arts. My professional pursuits naturally lie in the areas of Project Management, Software Development, and Game Design. You can learn of my experience from my resume (which you can get by <a href="contact.html">contacting me</a>). Additionally, I have a <a href="portfolio">portfolio</a>, which includes not only this website, but a few games and a large-scale project called <a>Booth</a> (an extra-curricular unique to Carnegie Mellon). If you are just interested in what I do in general, you can check out my <a href="projects.html">projects</a> as well! 
+        </div>
+    </div>
+
+    <div id=text_header> About this Website
+	    <div id=text_body>I built this website from scratch. Most of my previous web-design utilized twitter's bootstrap (a useful tool, but I wanted to prove to myself I could make something customized that also looked good). It's safe to say that I am proffecient in html, css, and javascript (including nodeJS and JQuery: I also have dealt with many RESTful services in my different career responsibilities).
+        </div>
+	<div id=text_body>As well as having programming experience (mostly C#), I also have experience in project management, having managed a team of over 75 people, and balancing a tight budget in a short timeframe (you can read about that <a href="portfolio.html">here</a>). I am very accustomed to working on teams, and prefer group work to individual work. If you'd like to know more about me, you can just browse this website, and I would be very appreciative of any <a href="contact.html">feedback</a> you can give.
+	 </div>
+    </div>
+    <div class="unselectable"> Newline </div>   
+</div>
+
 </div></div>

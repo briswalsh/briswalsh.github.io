@@ -56,7 +56,7 @@
 	bottom: 25px;
 	background-color: black;
 	margin-left: 49%;
-	margin-right: 7%;
+	margin-right: 3%;
 	border-radius: 10px; 
     }
 
@@ -96,7 +96,7 @@
 	    width: 70%;
             height: auto;
 	    top: 0em;
-	    max-width: 250px;
+	    max-width: 325px;
 	    margin: auto;
 	    margin-left: 25px;
 	    padding-top: 4.75em;
@@ -133,7 +133,7 @@
 	    top: 1.1em;
 	    width: 80%;
             height: auto;
-	    max-width: 375px;
+	    max-width: 525px;
 	    margin: auto;
 	    margin-top; 40px;
 	    padding-top: 5em;
@@ -173,7 +173,7 @@
 	    <a href="index.html" style="text-decoration:none">
 		<img src="main_images/home_icon.png" alt="Home Button" height="20px" width="20px">	
 	    </a>
-        </div>
+	</div>
     </div>
     <div class="row_right">
 	<div class="brgr_btn" id=btn_right onclick="brgr_btn(this)">
@@ -202,9 +202,9 @@
 
 <div id=main_image_frame>
     <div id=focus_image>
-        <img src="main_images/AT_AT_wiremodel.png" width=100% height=auto alt="AT_AT pic">	
+        <img src="spring_cleaning/fwd_hop.gif" width=100% height=auto alt="AT_AT pic" style="border-radius:20px">	
     </div>
-    <h2>
+    <h2 style="top: 15%;">
 	<div style="margin-left:10px; margin-top:5px"> Brian's Portfolio </div> 
 	<div class = "unselectable"> Newline </div>
     </h2>
@@ -244,7 +244,7 @@
 
 <div id=main_image_frame>
     <div id=secondary_focus>
-        <img src="spring_cleaning/fwd_hop.gif" width=100% height=auto alt="main spring cleaning gif" style="border-radius:20px">
+        <img src="spring_cleaning/main_lobby.jpg" width=100% height=auto alt="main spring cleaning gif" style="border-radius:20px">
     </div>
     <h2 id="sc_header">
 	<div style="margin-left:10px; margin-top:5px"> Spring Cleaning VR </div> 
