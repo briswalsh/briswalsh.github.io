@@ -67,7 +67,7 @@
     }
 
     #booth_header {
-	top: 145%;
+	top: 135%;
     }
 
     #sc_header { 
@@ -80,7 +80,7 @@
 
     @media screen and (max-width: 800px) {
 	#booth_header {
-	    top: 125%;
+	    top: 120%;
 	}
 	    
 	#sc_header {
@@ -212,10 +212,10 @@
 
 
 <div id=paper>
-    <div id=text_header> Professional Pursuits
-        <div id=text_body>My interests stem from a broad range of subjects. From webdesign and game design to programming and the arts, I find myself wanting to create products for people to consume. Be it entertainment, experiences, or something that makes life easier, I like to see my work be used and enjoyed by others.
+    <div id=text_header> Web Design        
+	<div id=text_body> I built this website from scratch as an example of my flexible talents. This helped me learn to create a reactive website using css and javascript. The biggest difficulty was making the website's design dynamic across multiple screens and devices.
         </div>
-	<div id=text_body> This website is an example of a project I wanted to devote myself to, as I built it from scratch. Below, you can see a few more highlighted projects of mine that reflect what I wish to do professionally. If you have any questions about the projects, please feel free to <a href="contact.html">contact me</a>.
+	<div id=text_body> I also have experience with C#'s .NET framework, creating an internal web application at my past work. Web design is just an extension of my overall professional interests, which include a breadth of media creation.
 	</div>
     </div>
     <div class="unselectable"> Newline </div>
@@ -234,10 +234,10 @@
 </div>
 
 <div id=paper>
-    <div id=text_header> What is Booth?
-        <div id=text_body>Booth is an experience wholly unique to Carnegie Mellon University, not necessarily in concept, but in scale. Many organizations on campus create interactive buildings to engage with the student body, but also the surrounding community in the Pittsburgh area. </div>
-	<div id=text_body> When describing the experience to someone, I like to describe each booth as being reminiscent of a line in a very emmersive theme park. In those parks, each line tells a story to the riders as they wait for the ride. They have interactivity and also pertain thematically to the ride itself.</div>
-	<div id=text_body> I was one of two leaders of Sigma Phi Epsilon's booth. Our organization's booth was Star Wars themed. We (my co-leader and the architect of the booth) decided on making the whole experience feel as if a viewer was living The Force Awakens through Finn's (FN-2187 - the disgraced former stormtrooper) eyes. If you would like to read more about it, <a href="booth_2017.html">click here</a>. </div>
+    <div id=text_header> "Booth"
+        <div id=text_body>Booth is an iconic Carnegie Mellon University experience, central to the campus and community-wide annual Spring Carnival. Each year several collegiate organizations create interactive buildings to engage and entertain the student body, faculty and their families, as well as members of the local Pittsburgh neighborhoods. The entries are built around a common theme and are judged on their outward structural appearance, their interior designs, the game that is implemented with the booth, and the overall adherence to the theme and story.  </div>
+	<div id=text_body> Each booth is reminiscent of the waiting area for an attraction or ride at an immersive theme park. The Carnival theme is decided upon in the Fall and interpreted uniquely by each entrant.  The booths also include an interactive game to entertain the guests as they proceed through the line. </div>
+	<div id=text_body> I was the co-chairman of Sigma Phi Epsilon's booth in 2017, which won the highest award for overall design, execution, and environmental sensitivity. The booth's theme was Star Wars and was a two-story structure designed to resemble a fallen AT-AT. My co-chair and I designed the experience from the perspective of Finn - the disgraced former stormtrooper from "The Force Awakens". If you would like to learn more about the process and see the booth, you can read more <a href="booth_2017.html">here</a>. </div>
     </div>
     <div class="unselectable"> Newline </div>
 </div>
@@ -264,9 +264,9 @@
 	</video>
     </div>
     <div id=text_header>
-	<div id=text_body> In Spring Cleaning, the player assumes the role of a newly hired sanitation employee on a space ship. The player must hit balls of trash through their respective recepticles to clean the ship. The game demos gravity puzzles, vacuum puzzles, and includes haptic feedback for the player with intuitive hitting mechanics. Our team was lauded for having a very immersive environment and intuitive controls.
+	<div id=text_body> In Spring Cleaning, the player assumes the role of a newly hired sanitation employee on a space ship. The player must hit balls of trash through their respective receptacles to clean the ship. The game demos gravity puzzles, vacuum puzzles, and includes haptic feedback for the player with intuitive hitting mechanics. Our team was lauded for having a very immersive environment and intuitive controls.
 	</div>
-	<div id=text_body> I created many of the 3D models that can be seen in the game. I programmed the majority of the user interaction, and I also animated the helper bot that we included to give the user a sense of scale. If you would like to read more about the project (and what I did), you can visit its <a href="https://github.com/briswalsh/SpringCleaning">GitHub page</a>.
+	<div id=text_body> I created many of the 3D models that can be seen in the game. I programmed the majority of the user interaction, and also animated the helper bot that we included to give the user a sense of scale. If you would like to read more about the project (and what I did), you can visit its <a href="https://github.com/briswalsh/SpringCleaning">GitHub page</a>.
 	</div>
     </div>
     <div class="unselectable"> Newline </div>
@@ -286,14 +286,14 @@
 
 <div id=paper>
     <div id=text_header> A reimagining of Sudoku
-	<div id=text_body>A similar prompt to Spring Cleaning, the idea of Noah's Tower was to reimagine Sudoku. Since the lead programmer and I were really into the idea of programming for a 3D environment, our team chose to reimagine sudoku onto 4 sides of a cube. </div>
+	<div id=text_body>A similar prompt to Spring Cleaning, the idea of Noah's Tower was to reimagine Sudoku. Since the lead programmer and I wanted to take on the challenge of programming for a 3D environment, our team chose to reimagine sudoku onto 4 sides of a cube. </div>
     </div>
     <div class="unselectable"> Newline </div>
     <div id=media_highlight_container>
 	<img src="noahs_tower/level_3.jpg" width=80% height=auto style="padding-left:10%">
     </div>
     <div id=text_header>
-        <div id=text_body> The infographic on the instruction menu explains how we re-wrote the rules of sudoku to fit a 3D Noah's Ark theme. </div>
+        <div id=text_body> The infographic on the instruction menu explains how we re-wrote the rules of sudoku to fit a 3D Noah's Ark theme.  </div>
     </div>
     <div class="unselectable"> Newline </div>
     <div id=media_highlight_container>
@@ -302,7 +302,8 @@
 	</video>
     </div>
     <div id=text_header>
-	<div id=text_body>In a team of 5, we created this in 3 weeks. We had feedback each week and were able to improve on our design. We learned a lot about feedback and how to improve the user interface. As well as playing the role of producer and presenter for the team, I also modeled the raft, simulated cloth physics on the raft's transom, as well as the rising wave mechanic that leads to the loss-state of the game. If you would like to learn more about the game's process - and my inclusion in it - you can visit the <a href="https://github.com/eosofsky/Sudoku">GitHub page</a>.
+	<div id=text_body>
+In a team of 5, we created this in 3 weeks. We had feedback each week and were able to improve on our design. We learned a lot about feedback and how to improve the user interface. As well as playing the role of producer and presenter for the team, I also modeled the raft, simulated cloth physics on the raft's transom, as well as the rising wave mechanic that leads to the loss-state of the game. If you would like to learn more about the game's process - and my contribution to it - you can visit the <div id=text_body> <a href="https://github.com/eosofsky/Sudoku">GitHub page</a>.
         </div>
     </div>
     <div class="unselectable"> Newline </div>
