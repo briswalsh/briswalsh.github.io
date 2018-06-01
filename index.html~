@@ -81,10 +81,7 @@
 
 <div id=paper>
     <div id=text_header> Brian Walsh
-	<div id=text_body>I graduated from Carnegie Mellon University with a BS in Business Administration from the Tepper
-School of Business. My concentration was Business Technology, with a minor in Computer Game Design.
-My passions lie at the intersection of business, technology, and the fine arts. I am interested in
-employment in Project Management, Software Development, or Game Design. 
+	<div id=text_body>I graduated from Carnegie Mellon University with a BS in Business Administration from the Tepper School of Business. My concentration was Business Technology, with a minor in Computer Game Design. My passions lie at the intersection of business, technology, and the fine arts. I am interested in employment in Project Management, Software Development, or Game Design. 
         </div>
 	<div id=text_body> 
 		I am proficient in html, css, and javascript -including nodeJS and JQuery. I have also dealt with many RESTful services. I am fluent in French and have acquired basic Japanese reading skills. I have significant programming experience -mostly C#. I also have experience in project management, having managed a team of over 75 people with a tight budget in a short timeframe (more details <a href="booth_2017.html">here</a>). I work well with groups and on team projects. I have proven time-management and analytical skills. 
@@ -100,4 +97,5 @@ employment in Project Management, Software Development, or Game Design.
     <div class="unselectable"> Newline </div>   
 </div>
 
-</div></div>
+</div>
+</div>
